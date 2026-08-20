@@ -1,6 +1,6 @@
 ---
 name: edi-xml-failure-corrections
-description: 'Diagnose and correct EDI XML failures reported by error message or partner email, working in the "EDI Failiures XML" folder. Use when the user pastes an EDI error message or a customer complaint (e.g. missing/incorrect tax, missing/invalid segment, failed transaction, ASN/PO/850/856 validation error) and provides or references a source XML file in that folder. Also use when asked to "log this fix", "add this case to the skill", or "update the EDI failure skill" after a correction is made. This is a skill package: this file stays small (workflow, vocabulary, index) and full case history lives in cases/<customer>.md, loaded only for the customer in play.'
+description: 'Diagnose and correct EDI XML failures reported by error message or partner email, working in the "EDI Failiures XML" folder. Use when the user pastes an EDI error message or a customer complaint (e.g. missing/incorrect tax, missing/invalid segment, failed transaction, ASN/PO/850/856 validation error) and provides or references a source XML file in that folder. Also use when asked to "log this fix", "add this case to the skill", or "update the EDI failure skill" after a correction is made. This is a skill package: this file stays small (workflow, vocabulary, index) and full case history lives in cases/<customer>-<doctype>.md, loaded only for the customer and document type in play.'
 ---
 
 # EDI XML Failure Corrections
@@ -35,17 +35,18 @@ for the package layout and sharding rule.
    case entry rather than changing it — let the customer's complaint or a
    second confirmed data point drive that fix, not inference from one other
    document.
-5. Append the case to `cases/<customer-slug>.md` (create the file from the
-   template there if this customer has no cases yet), then add one row to
-   the **Quick index** below. Every version gets its own entry, including
-   failed attempts. Never write full case detail into this file.
+5. Append the case to `cases/<customer-slug>-<doctype>.md` (create the file
+   from the template there if this customer+doc-type combination has no
+   cases yet), then add one row to the **Quick index** below. Every version
+   gets its own entry, including failed attempts. Never write full case
+   detail into this file.
 
 ## How to match a new failure to a past case
 
 Match on this order of specificity:
 
-1. **Customer + document type + error type** — exact match: open that
-   customer's `cases/<slug>.md` and jump straight to the case.
+1. **Customer + document type + error type** — exact match: open
+   `cases/<slug>-<doctype>.md` and jump straight to the case.
 2. **Document type + error type** across customers — the mechanic usually
    transfers even when the partner differs. Check the Quick index for other
    customers with the same doc type + error type before opening any file.
@@ -86,8 +87,8 @@ Partner notes section.
 ## Quick index
 
 Newest first. One row per case *version* (a failed `_v2` and its resolving
-`_v3` each get a row). Link goes to `cases/<slug>.md#case-NN`.
+`_v3` each get a row). Link goes to `cases/<slug>-<doctype>.md#case-NN`.
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
-| 01 | Home Hardware Colonial | 810 | `tax-missing` | resolved | [cases/home-hardware-colonial.md](cases/home-hardware-colonial.md#case-01--810--tax-missing--2026-08-20) |
+| 01 | Home Hardware Colonial | 810 | `tax-missing` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-01--810--tax-missing--2026-08-20) |
