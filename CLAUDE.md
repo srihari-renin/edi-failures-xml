@@ -33,21 +33,24 @@ case becomes too large to load or scan efficiently. To prevent that,
   purpose: workflow, error-type vocabulary, matching rules, cross-cutting
   notes, and a **Quick index** table (one row per case: customer, doc type,
   error type, status, link). Never write full case detail here.
-- `.claude/skills/edi-xml-failure-corrections/cases/<customer-slug>.md` —
-  one file per customer/trading partner, holding that customer's full case
-  entries and partner-specific notes. Slug = the customer name as it appears
-  in the invoice filename, lowercased, hyphenated (e.g. `Home Depot.CA Hub`
-  → `home-depot-ca-hub`). Create the file the first time that customer gets
-  a case.
-- When a single customer file passes **~50 cases**, split it further by
-  document type (`<slug>-810.md`, `<slug>-856.md`, ...) and update the
-  Quick index links. Do this proactively at the threshold, not once the
-  file is already unwieldy.
+- `.claude/skills/edi-xml-failure-corrections/cases/<customer-slug>-<doctype>.md`
+  — one file per customer **and document type** (e.g.
+  `home-hardware-colonial-810.md`), holding that combination's full case
+  entries and partner-specific notes. Split by doc type from the first case
+  for that customer, not just at volume — different doc types rarely share
+  fields or error types anyway. Slug = the customer name as it appears in the
+  invoice filename, lowercased, hyphenated (e.g. `Home Depot.CA Hub` →
+  `home-depot-ca-hub`). Create the file the first time that customer+doctype
+  combination gets a case.
+- When a single customer+doctype file passes **~50 cases**, split it further
+  — by year is the default (`<slug>-810-2027.md`) — and update the Quick
+  index links. Do this proactively at the threshold, not once the file is
+  already unwieldy.
 - Cross-cutting rules that aren't specific to one customer go in `SKILL.md`'s
   General notes section, not in a customer file.
-- After every fix: append the case to the relevant `cases/<slug>.md`, then
-  add one row to `SKILL.md`'s Quick index pointing at it. Both steps, every
-  time — a case that's only in one place is effectively lost.
+- After every fix: append the case to the relevant `cases/<slug>-<doctype>.md`,
+  then add one row to `SKILL.md`'s Quick index pointing at it. Both steps,
+  every time — a case that's only in one place is effectively lost.
 - See `cases/README.md` inside the skill folder for the full layout and the
   reasoning behind sharding by customer.
 

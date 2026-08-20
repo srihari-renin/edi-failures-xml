@@ -1,4 +1,8 @@
-# Home Hardware Colonial (`833ALLRENINHOLD`) — Case Log
+# Home Hardware Colonial (`833ALLRENINHOLD`) — 810 — Case Log
+
+Covers 810 (invoice) documents only. Other document types for this customer
+(850, 856, 846, ...) get their own `cases/home-hardware-colonial-<doctype>.md`
+file — see `cases/README.md`.
 
 ## Partner notes
 
