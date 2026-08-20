@@ -51,6 +51,46 @@ case becomes too large to load or scan efficiently. To prevent that,
 - See `cases/README.md` inside the skill folder for the full layout and the
   reasoning behind sharding by customer.
 
+## Git workflow
+
+Repo: [github.com/srihari-renin/edi-failures-xml](https://github.com/srihari-renin/edi-failures-xml)
+(private). `master` is the backup / source of truth — it should always
+reflect only resolved (or explicitly logged) case state, so it stays safe to
+clone or restore from at any time.
+
+1. **Never commit case work directly to `master`** — even solo. Before
+   starting a new failure, branch off an up-to-date `master`:
+   ```
+   git checkout master && git pull && git checkout -b case/<customer-slug>/<reference-id>
+   ```
+   `<customer-slug>` matches the `cases/<slug>.md` naming from the skill
+   package above; `<reference-id>` is the invoice/PO/control number in
+   lowercase (e.g. `case/home-hardware-colonial/psi1312154`). For work that
+   isn't tied to one invoice (skill or process changes), use
+   `chore/<short-description>` instead (e.g. `chore/branching-conventions`).
+2. Do all of that case's work on its branch: the source file, every `_v2` /
+   `_v3` / ... attempt, the case entry in `cases/<slug>.md`, and the Quick
+   index row in `SKILL.md`. Commit as you go.
+3. When the case reaches a stopping point (resolved, or a failed attempt
+   that's fully logged), push the branch and open a PR into `master`:
+   ```
+   git push -u origin case/<customer-slug>/<reference-id>
+   gh pr create --fill
+   ```
+   Self-merge is fine — no required review for this project — but always via
+   a PR, not a local `git merge`, so GitHub keeps a record of what changed
+   per case.
+4. Merge, then delete the branch (`gh pr merge --squash --delete-branch` or
+   the equivalent from the GitHub UI). Squash so `master` gets one clean
+   commit per resolved case.
+5. **Working two cases at once** (you and someone else, or two parallel
+   Claude sessions): each just branches from `master` and works
+   independently — no coordination needed until merge time. The only file
+   likely to conflict is `SKILL.md`'s Quick index table, since every case
+   adds a row there; if both branches add a row in the same place, Git will
+   flag a merge conflict — resolve it by keeping both new rows, nothing more
+   is needed.
+
 ## Rules
 
 - One skill only: `edi-xml-failure-corrections`. Every corrected failure adds
