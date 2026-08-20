@@ -1,0 +1,237 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260720</InvoiceDate>
+        <PurchaseOrderDate>20260703</PurchaseOrderDate>
+        <PurchaseOrderNumber>10986</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>V3752</Vendor>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>CFFO</CarrierAlphaCode>
+        <CarrierRouting>CONSOLIDATED FASTFRATE TRANSPORT IN</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>1073265390</CarrierProNumber>
+        <BillOfLadingNumber>SS1315947</BillOfLadingNumber>
+        <ShipDate>20260720</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsType>14</TermsType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260815</TermsDiscountDate>
+        <TermsDiscountDueDays>26</TermsDiscountDueDays>
+        <TermsNetDueDate>20260815</TermsNetDueDate>
+        <TermsNetDueDays>26</TermsNetDueDays>
+        <TermsDiscountAmount>14.08</TermsDiscountAmount>
+        <TermsDescription>2%15MF</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>5320-7</AddressLocationNumber>
+        <AddressName>PARKSIDE HOME HARDWARE BUILDING CENTRE</AddressName>
+        <AddressAlternateName>HOME HARDWARE LTD.     #5320-7</AddressAlternateName>
+        <Address1>880 MEMORIAL DRIVE</Address1>
+        <Address2>HOME HARDWARE LTD.     #5320-7</Address2>
+        <City>WINKLER</City>
+        <State>MB</State>
+        <PostalCode>R6W 0M6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SN</AddressTypeCode>
+      </Address>
+      <Reference>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1309812</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1315947</ReferenceID>
+      </Reference>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1308344</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>201240</VendorPartNumber>
+          <ConsumerPackageCode>043044210110</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>MIRR 30 X36 BEV REC (20-1240)</PartDescription1>
+          <OrderQty>10.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>24.14</UnitPrice>
+          <ShipQty>10.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>241.40</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1308344</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>2</LineSequenceNumber>
+          <VendorPartNumber>201320</VendorPartNumber>
+          <ConsumerPackageCode>043044210271</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>P-3636-FBV FRLS SQ MIRR BEVEL</PartDescription1>
+          <OrderQty>12.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>27.88</UnitPrice>
+          <ShipQty>12.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>334.56</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1308344</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>3</LineSequenceNumber>
+          <VendorPartNumber>201180</VendorPartNumber>
+          <ConsumerPackageCode>043044210035</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>MIRR 24X30 BEV REC (20-1180)</PartDescription1>
+          <OrderQty>6.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>15.73</UnitPrice>
+          <ShipQty>6.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>94.38</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>GS</TaxTypeCode>
+        <TaxAmount>33.52</TaxAmount>
+        <TaxPercent>5.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1308344</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>703.86</TotalAmount>
+        <TotalNetSalesAmount>670.34</TotalNetSalesAmount>
+        <TotalQtyInvoiced>28.00</TotalQtyInvoiced>
+        <TotalWeight>210.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>3</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

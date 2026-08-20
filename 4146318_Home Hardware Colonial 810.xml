@@ -1,0 +1,217 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260730</InvoiceDate>
+        <PurchaseOrderDate>20260716</PurchaseOrderDate>
+        <PurchaseOrderNumber>24-666409</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>V3752</Vendor>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>CFFO</CarrierAlphaCode>
+        <CarrierRouting>CONSOLIDATED FASTFRATE TRANSPORT IN</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>1073265415</CarrierProNumber>
+        <BillOfLadingNumber>SS1319799</BillOfLadingNumber>
+        <ShipDate>20260730</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsType>14</TermsType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260815</TermsDiscountDate>
+        <TermsDiscountDueDays>16</TermsDiscountDueDays>
+        <TermsNetDueDate>20260815</TermsNetDueDate>
+        <TermsNetDueDays>28</TermsNetDueDays>
+        <TermsDiscountAmount>14.35</TermsDiscountAmount>
+        <TermsDescription>2%15MF</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>5233-2</AddressLocationNumber>
+        <AddressName>6756906 Manitoba Ltd</AddressName>
+        <Address1>120 BROADWAY STREET</Address1>
+        <Address2>Store # 5233-2</Address2>
+        <City>GLENBORO</City>
+        <State>MB</State>
+        <PostalCode>R0K 0X0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SN</AddressTypeCode>
+      </Address>
+      <Reference>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1313783</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1319799</ReferenceID>
+      </Reference>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1312154</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>06096CO129</VendorPartNumber>
+          <ConsumerPackageCode>999999999993</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>Frameless  Slid.B Titanium Clear Mir. 60" X 96"</PartDescription1>
+          <OrderQty>1.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>343.93</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>343.93</ExtendedItemTotal>
+          <ProductProcessDescription>040</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1312154</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>2</LineSequenceNumber>
+          <VendorPartNumber>07296CO129</VendorPartNumber>
+          <ConsumerPackageCode>999999999993</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>Frameless  Slid.B Titanium Clear Mir. 72" X 96"</PartDescription1>
+          <OrderQty>1.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>373.71</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>373.71</ExtendedItemTotal>
+          <ProductProcessDescription>040</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>GS</TaxTypeCode>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxPercent>0.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1312154</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>717.64</TotalAmount>
+        <TotalNetSalesAmount>717.64</TotalNetSalesAmount>
+        <TotalQtyInvoiced>2.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>2</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

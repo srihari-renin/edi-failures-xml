@@ -1,0 +1,232 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260814</InvoiceDate>
+        <PurchaseOrderDate>20260807</PurchaseOrderDate>
+        <PurchaseOrderNumber>538177850</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>70001340</Vendor>
+        <CustomerOrderNumber>0242700996</CustomerOrderNumber>
+        <FOBPayCode>CC</FOBPayCode>
+        <CarrierAlphaCode>SDCR_DS</CarrierAlphaCode>
+        <CarrierRouting>UNSP</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>A11825397</CarrierProNumber>
+        <BillOfLadingNumber>SS1324995</BillOfLadingNumber>
+        <ShipDate>20260814</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260913</TermsDiscountDate>
+        <TermsDiscountDueDays>30</TermsDiscountDueDays>
+        <TermsNetDueDate>20260914</TermsNetDueDate>
+        <TermsNetDueDays>31</TermsNetDueDays>
+        <TermsDiscountAmount>0.97</TermsDiscountAmount>
+        <TermsDescription>2%30D/N31</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>93</LocationCodeQualifier>
+        <AddressLocationNumber>7274</AddressLocationNumber>
+        <AddressName>BEAUREGARD MICHEL</AddressName>
+        <Address1>169 BROOKVIEW PL</Address1>
+        <City>STONY PLAIN</City>
+        <State>AB</State>
+        <PostalCode>T7Z 2X7</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>70001340</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>93</LocationCodeQualifier>
+        <AddressLocationNumber>7274</AddressLocationNumber>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1321400</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1324995</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>MR</ReferenceQual>
+        <ReferenceID>D2C</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>X9</ReferenceQual>
+        <ReferenceID>3783768887</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>4C</ReferenceQual>
+        <ReferenceID>C</ReferenceID>
+      </Reference>
+      <ChargesAllowances>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>I170</AllowChrgCode>
+        <AllowChrgAmt>0.11</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>C300</AllowChrgCode>
+        <AllowChrgAmt>0.57</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1317282</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>10</LineSequenceNumber>
+          <BuyerPartNumber>1001342948</BuyerPartNumber>
+          <VendorPartNumber>CPC0608F</VendorPartNumber>
+          <ConsumerPackageCode>065375035606</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>POST COVER MISSION SQUARE 5 1/4" X8' MDF</PartDescription1>
+          <OrderQty>1</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>46.00</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>46.00</ExtendedItemTotal>
+          <ProductProcessDescription>175</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>CG</TaxTypeCode>
+        <TaxAmount>2.26</TaxAmount>
+        <TaxPercent>5.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1317282</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>47.56</TotalAmount>
+        <TotalNetSalesAmount>46.00</TotalNetSalesAmount>
+        <TotalQtyInvoiced>1.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>
