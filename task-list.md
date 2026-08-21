@@ -14,3 +14,4 @@ keeping both new rows — same rule as the Quick index table in the skill.
 
 | Task | Branch | Started | Notes |
 |---|---|---|---|
+| TimberMart 810CM tax sign fix, invoice PSCM032060 | `case/home-care-timbrmart/pscm032060` | 2026-08-21 | `_v2` corrected (TaxAmount → -23.28), not yet sent to TimberMart. Awaiting send + confirmation it posts as credit before moving to `Resolved/`. |

@@ -70,6 +70,7 @@ nothing fits, and add it to this list in the same edit.
 | `qty-mismatch` | Ordered / shipped / invoiced quantities disagree |
 | `price-mismatch` | Unit or extended price disagrees with the PO |
 | `duplicate-document` | Same document number transmitted more than once |
+| `credit-sign-convention` | Credit memo (`InvoiceTypeCode=CR`) rejected/mis-posted because a field's sign didn't match the partner's expected convention for credits (e.g. tax sign, price sign) |
 
 ## General notes
 
@@ -91,5 +92,6 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Care TimbrMart | 810 Credit Memo | `credit-sign-convention` | corrected, awaiting send | [cases/home-care-timbrmart-810-credit-memo.md](cases/home-care-timbrmart-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-08-21) |
 | 01 | Home Depot.CA Hub | 810 | `totals-mismatch` | resolved | [cases/home-depot-ca-hub-810.md](cases/home-depot-ca-hub-810.md#case-01--810--totals-mismatch--2026-08-21) |
 | 01 | Home Hardware Colonial | 810 | `tax-missing` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-01--810--tax-missing--2026-08-20) |

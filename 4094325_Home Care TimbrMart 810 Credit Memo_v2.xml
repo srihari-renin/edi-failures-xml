@@ -1,0 +1,112 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260625</InvoiceDate>
+        <PurchaseOrderDate>20260625</PurchaseOrderDate>
+        <PurchaseOrderNumber>106193</PurchaseOrderNumber>
+        <InvoiceTypeCode>CR</InvoiceTypeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>13850</Vendor>
+        <CustomerAccountNumber>6630</CustomerAccountNumber>
+        <CarrierAlphaCode>OVLD</CarrierAlphaCode>
+        <CarrierRouting>TST Overland Express</CarrierRouting>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsNetDueDate>20260529</TermsNetDueDate>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <AddressName>COLE'S TIM-BR-MART</AddressName>
+        <AddressAlternateName>TIM-BR-MART                 #6630.00</AddressAlternateName>
+        <Address1>47 ONTARIO, P.O.BOX 3000</Address1>
+        <Address2>TIM-BR-MART                 #6630.00</Address2>
+        <City>Brighton</City>
+        <State>ON</State>
+        <PostalCode>K0K 1H0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>TIM-BR-MART LTD.</AddressName>
+        <Address1>1120 - 68th Avenue NE</Address1>
+        <City>CALGARY</City>
+        <State>AB</State>
+        <PostalCode>T2E 8S5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>TIM-BR-MART LTD.</AddressName>
+        <Address1>1120 - 68th Avenue NE</Address1>
+        <City>CALGARY</City>
+        <State>AB</State>
+        <PostalCode>T2E 8S5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <ChargesAllowances>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>ZZZZ</AllowChrgCode>
+        <AllowChrgAmt>179.04</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>VK114-H12</AllowChrgHandlingDescription>
+      </ChargesAllowances>
+    </Header>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>OH</TaxTypeCode>
+        <TaxAmount>-23.28</TaxAmount>
+        <TaxPercent>13.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM032060</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>202.32</TotalAmount>
+        <TotalNetSalesAmount>0.00</TotalNetSalesAmount>
+        <TotalQtyInvoiced>0.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>0</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>
