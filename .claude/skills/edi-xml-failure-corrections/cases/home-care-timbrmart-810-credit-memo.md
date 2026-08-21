@@ -70,5 +70,5 @@ Entry template — copy this block for every new case AND every new version:
   - `TaxAmount`: `23.28` → `-23.28`
   - `AllowChrgAmt` (179.04) and `TotalAmount` (202.32) left unchanged — both already positive, matching the required convention.
   - Balance check: `179.04 + 23.28 = 202.32` ✓
-- **Files:** `4094325_Home Care TimbrMart 810 Credit Memo.xml` → `4094325_Home Care TimbrMart 810 Credit Memo_v2.xml`
-- **Status:** corrected, awaiting send to TimberMart and confirmation it posts as a credit (not yet moved to `Resolved/`).
+- **Files:** `Resolved/4094325_Home Care TimbrMart 810 Credit Memo.xml` → `Resolved/4094325_Home Care TimbrMart 810 Credit Memo_v2.xml` (moved to `Resolved/` once the corrected credit was confirmed sent)
+- **Status:** resolved. Corrected credit sent to TimberMart.
