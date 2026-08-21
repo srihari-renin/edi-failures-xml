@@ -23,4 +23,8 @@ Entry template:
 - **Related case(s):** link to case entries if applicable, or "n/a"
 -->
 
-_(Empty — fills in as gaps are found.)_
+### TimberMart CR tax sign — upstream cause unconfirmed — 2026-08-21
+- **Context:** Home Care TimbrMart 810 Credit Memo, invoice PSCM032060 (PO 106193) — [Case 01](.claude/skills/edi-xml-failure-corrections/cases/home-care-timbrmart-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-08-21)
+- **Gap / limitation:** The credit memo shipped with `TaxAmount` positive when TimberMart requires it negative. Haven't traced why the source ERP/EDI mapping defaults credit memo tax to positive — could be a per-document-type template setting (would recur on every future TimberMart CR, and possibly other CR-type trading partners with the same convention) or a one-off. Also haven't checked whether any other open/pending TimberMart credit memos have the same defect.
+- **Impact:** Until traced, every new TimberMart 810 Credit Memo should be checked for this before sending, not assumed fixed at the source.
+- **Related case(s):** [home-care-timbrmart-810-credit-memo.md#case-01](.claude/skills/edi-xml-failure-corrections/cases/home-care-timbrmart-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-08-21)
