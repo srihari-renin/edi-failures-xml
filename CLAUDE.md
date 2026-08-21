@@ -93,6 +93,37 @@ clone or restore from at any time.
    adds a row there; if both branches add a row in the same place, Git will
    flag a merge conflict — resolve it by keeping both new rows, nothing more
    is needed.
+6. **Running several cases in parallel** (e.g. `git worktree add` off
+   different branches so more than one session can work at once without
+   switching branches in the same checkout): each worktree still follows
+   steps 1–5 independently on its own `case/`/`chore/` branch. Use the task
+   tracking files below so it's visible what every worktree is doing.
+
+## Task tracking files
+
+Three files at the project root, separate from the skill package, track
+work-in-progress and knowledge that doesn't belong in a case entry:
+
+- **[`task-list.md`](task-list.md)** — open tasks only, one row per task
+  currently being worked (across any worktree/session). Add a row when you
+  start something. When it's done, **move the row** into
+  `Resolved/task-list-completed.md` — cut from one file, paste into the
+  other, don't leave it in both and don't leave finished work in the open
+  file. This is a live coordination board, not a history — keeping it short
+  is the point.
+- **[`Resolved/task-list-completed.md`](Resolved/task-list-completed.md)** —
+  archive of finished tasks, moved here from `task-list.md`. Newest first.
+- **[`gaps.md`](gaps.md)** — caveats, known limitations, and errors that
+  couldn't be fully resolved, logged for future reference. Not a task list —
+  nothing here necessarily needs action. Append whenever an error can't be
+  fully resolved and you need to record why, or you notice a limitation
+  that isn't specific enough to one case to belong in that case's
+  `cases/<slug>-<doctype>.md` file.
+- **[`open-questions.md`](open-questions.md)** — any decision question
+  asked in chat that doesn't get answered in the same turn. Log it here
+  before moving on to other work so it isn't lost; when picking work back
+  up, check this file and re-ask anything still pending. Remove or mark
+  answered once resolved.
 
 ## Rules
 
