@@ -48,5 +48,5 @@ Entry template — copy this block for every new case AND every new version:
 - **Fix (applied in _v2):**
   - `TotalAmount`: 47.56 → 47.58 (46.00 + 2.26 − 0.11 − 0.57)
   - Nothing else changed — line item, tax, and allowance amounts were all already correct.
-- **Files:** `4143542_Home Depot.CA Hub 810.xml` → `4143542_Home Depot.CA Hub 810_v2.xml`
+- **Files:** `Resolved/4143542_Home Depot.CA Hub 810.xml` → `Resolved/4143542_Home Depot.CA Hub 810_v2.xml` (moved to `Resolved/` once the corrected invoice was confirmed sent)
 - **Status:** resolved. Document corrected; upstream root cause in NAV not yet investigated — worth a follow-up if this recurs for this customer.
