@@ -125,6 +125,16 @@ work-in-progress and knowledge that doesn't belong in a case entry:
   up, check this file and re-ask anything still pending. Remove or mark
   answered once resolved.
 
+`Resolved/` isn't only for the completed task list — once a case's
+corrected invoice is confirmed **sent to the partner** (not just fixed
+locally), move that case's source file and every `_v2`/`_v3`/... attempt
+into `Resolved/`, together with any reference file used only for that case's
+diagnosis. This keeps the working folder showing only invoices still in
+play. Moving doesn't count as editing — the "originals are never modified"
+rule (below) is about content, not location — but update the case's
+**Files** line in `cases/<slug>-<doctype>.md` to point at the new
+`Resolved/...` path so the record stays accurate.
+
 ## Rules
 
 - One skill only: `edi-xml-failure-corrections`. Every corrected failure adds

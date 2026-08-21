@@ -56,5 +56,5 @@ Entry template — copy this block for every new case AND every new version:
   - `TermsDiscountAmount`: **left unchanged at 14.35** — deliberately not recalculated. Only the actual defect (missing tax) was corrected; the discount amount was left exactly as the source document had it, since the correct basis for this specific store is unconfirmed (see Root-cause check above). `TermsDiscountAmount` does not feed `TotalAmount` in this format, so leaving it untouched does not affect the total.
   - `TotalNetSalesAmount` (717.64) left unchanged — it is correctly pre-tax on both documents.
   - Not changed: `TotalWeight` is 0.00 on the source (reference shows 210.00) — left as-is, out of scope for this fix; real weight not available. Worth a separate check.
-- **Files:** `4146318_Home Hardware Colonial 810.xml` → `4146318_Home Hardware Colonial 810_v2.xml`
+- **Files:** `Resolved/4146318_Home Hardware Colonial 810.xml` → `Resolved/4146318_Home Hardware Colonial 810_v2.xml` (moved to `Resolved/` once the corrected invoice was confirmed sent; reference file `4110662_Home Hardware Colonial 810 (Reference).xml` moved alongside it)
 - **Status:** resolved. Document corrected, sent to customer, upstream NAV setup fixed, and confirmed no other affected documents exist for this ship-to.
