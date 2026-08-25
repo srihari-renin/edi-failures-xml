@@ -8,20 +8,29 @@ corrected, one failure at a time. Follow this exact process every time.
 1. **User provides the failure.** In chat, the user pastes the EDI error
    message and places the source file in this folder. That file is the
    "source file" — the original, broken document as it came from the system.
-2. **Diagnose together.** Read the error message against the source file and
+2. **Check for a matching case first.** Before diagnosing from scratch, check
+   `SKILL.md`'s Quick index (and the relevant `cases/<slug>-<doctype>.md`
+   file) for a case on the same customer + document type + error type, or
+   the same error type on a different customer/doc type — see `SKILL.md`'s
+   own matching-order rules. If a similar case is already logged, use it as
+   the starting point.
+4. **Diagnose together.** Read the error message against the source file and
    discuss what's actually wrong before touching anything. Do not jump
    straight to editing.
-3. **Never edit the source file.** The original file placed in this folder is
+5. **Never edit the source file.** The original file placed in this folder is
    permanent and untouched — it's the record of what the failure looked like.
-4. **Create a version 2 file.** Once the fix is agreed, create a corrected
+6. **Create a version 2 file.** Once the fix is agreed, create a corrected
    copy in this same folder named `<original-filename>_v2.<ext>` (e.g.
    `PO4521.xml` → `PO4521_v2.xml`). All corrections go into this new file.
-5. **Update the skill.** After each fix, append a case — error signature,
-   root cause, and what changed — to the correct file inside the
-   `edi-xml-failure-corrections` skill **package** (see below). This is one
-   growing skill, not a new skill per error type or trading partner, so it
-   accumulates every pattern we've solved and future failures can be matched
-   against past ones.
+7. **Update the skill — automatically, no need to ask first.** After each
+   fix, append a case — error signature, root cause, and what changed — to
+   the correct file inside the `edi-xml-failure-corrections` skill
+   **package** (see below), and add the Quick index row. Do this as a normal
+   part of finishing the fix, without pausing to confirm it first — it's
+   expected every time, not a judgment call. This is one growing skill, not
+   a new skill per error type or trading partner, so it accumulates every
+   pattern we've solved and future failures can be matched against past
+   ones.
 
 ## Skill package structure
 
@@ -149,3 +158,8 @@ rule (below) is about content, not location — but update the case's
   `edi-xml-failure-corrections` skill, not just the first attempt — including
   what was tried, whether it worked, and if not, why, so failed attempts are
   as visible as successful ones.
+- Logging a case and updating the skill package is not a decision to check in
+  on — do it automatically every time a fix (or a "no fix needed" outcome) is
+  reached. Before diagnosing a new failure, check the Quick index / relevant
+  `cases/<slug>-<doctype>.md` file for a matching case first and reuse it as
+  the starting point instead of re-diagnosing from scratch.
