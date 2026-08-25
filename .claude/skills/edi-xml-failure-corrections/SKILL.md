@@ -92,6 +92,8 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 02 | Home Depot Canada | 810 | `price-mismatch` | resolved | [cases/home-depot-canada-810.md](cases/home-depot-canada-810.md#case-02--810--price-mismatch--2026-08-25) |
+| 01 | Home Depot Canada | 810 | `price-mismatch` | resolved | [cases/home-depot-canada-810.md](cases/home-depot-canada-810.md#case-01--810--price-mismatch--2026-08-25) |
 | 01 | Home Care TimbrMart | 810 Credit Memo | `credit-sign-convention` | resolved | [cases/home-care-timbrmart-810-credit-memo.md](cases/home-care-timbrmart-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-08-21) |
 | 01 | Home Depot.CA Hub | 810 | `totals-mismatch` | resolved | [cases/home-depot-ca-hub-810.md](cases/home-depot-ca-hub-810.md#case-01--810--totals-mismatch--2026-08-21) |
 | 01 | Home Hardware Colonial | 810 | `tax-missing` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-01--810--tax-missing--2026-08-20) |
