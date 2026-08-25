@@ -68,8 +68,8 @@ Entry template — copy this block for every new case AND every new version:
   - `Summary/Totals/TotalAmount`: 195.02 → 195.13 (172.68 + 22.45)
   - `UnitPrice`, `ExtendedItemTotal`, `TotalNetSalesAmount` unchanged (196.47 — already matched the PO)
   - `PaymentTerms/TermsDiscountAmount` (4.38) left unchanged — out of scope; its computation base doesn't match any obvious combination of fields on this invoice (not 2% of `TotalAmount`, `TotalNetSalesAmount`, or any allowance-adjusted variant tried), so it wasn't touched per the "fix only what the diagnosis evidences" rule.
-- **Files:** `4106797_Home Depot Canada OS 850.xml` (reference, PO) / `4155785_Home Depot Canada Special 810.xml` → `4155785_Home Depot Canada Special 810_v2.xml`
-- **Status:** resolved (document corrected). Not yet confirmed sent/resent to Home Depot — since Rithum never rejected the original, resending may need to go through a credit/debit process rather than a straight resend; confirm the right channel before transmitting. Move to `Resolved/` once that's done.
+- **Files:** `Resolved/4106797_Home Depot Canada OS 850.xml` (reference, PO) / `Resolved/4155785_Home Depot Canada Special 810.xml` → `Resolved/4155785_Home Depot Canada Special 810_v2.xml`
+- **Status:** resolved. Caught before the original PSI1320586 was ever sent — `_v2` was sent to Home Depot instead, confirmed by the user 2026-08-25. Files moved to `Resolved/`.
 
 ### Case 01 — 810 — price-mismatch — 2026-08-25
 - **Document type:** 810
@@ -90,5 +90,5 @@ Entry template — copy this block for every new case AND every new version:
   - `Summary/Tax/TaxAmount`: 13.70 → 13.74 (recomputed: 13% × (120.24 − 0.30 − 1.50 − 4.26 − 8.49) = 13% × 105.69 = 13.7397 → 13.74)
   - `Summary/Totals/TotalAmount`: 119.11 → 119.43 (105.69 + 13.74)
   - `PaymentTerms/TermsDiscountAmount` (2.67) left unchanged — same "out of scope, base doesn't reconcile to any obvious formula" reasoning as Case 02.
-- **Files:** `4144401_Home Depot Canada OS 850.xml` (reference, PO) / `4155759_Home Depot Canada Special 810.xml` → `4155759_Home Depot Canada Special 810_v2.xml`
-- **Status:** resolved (document corrected). Not yet confirmed sent/resent to Home Depot — same caveat as Case 02: original wasn't rejected, so confirm the right resend/credit channel before transmitting. Move to `Resolved/` once that's done.
+- **Files:** `Resolved/4144401_Home Depot Canada OS 850.xml` (reference, PO) / `Resolved/4155759_Home Depot Canada Special 810.xml` → `Resolved/4155759_Home Depot Canada Special 810_v2.xml`
+- **Status:** resolved. Caught before the original PSI1320440 was ever sent — `_v2` was sent to Home Depot instead, confirmed by the user 2026-08-25. Files moved to `Resolved/`.
