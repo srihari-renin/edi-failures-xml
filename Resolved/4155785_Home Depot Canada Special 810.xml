@@ -1,0 +1,228 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260825</InvoiceDate>
+        <PurchaseOrderDate>20260715</PurchaseOrderDate>
+        <PurchaseOrderNumber>537765507</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>35535708850</Vendor>
+        <CustomerOrderNumber>0617285968</CustomerOrderNumber>
+        <FOBPayCode>CC</FOBPayCode>
+        <CarrierAlphaCode>PKUP</CarrierAlphaCode>
+        <CarrierRouting>Customer transport logistics</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>6100972191</CarrierProNumber>
+        <BillOfLadingNumber>SS1328359</BillOfLadingNumber>
+        <ShipDate>20260825</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsType>01</TermsType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260924</TermsDiscountDate>
+        <TermsDiscountDueDays>30</TermsDiscountDueDays>
+        <TermsNetDueDate>20260925</TermsNetDueDate>
+        <TermsNetDueDays>31</TermsNetDueDays>
+        <TermsDiscountAmount>4.38</TermsDiscountAmount>
+        <TermsDescription>2%30D/N31</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>BRAMPTON-1</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>7108</AddressLocationNumber>
+        <AddressName>KANATA - 7108</AddressName>
+        <Address1>10 FRANK NIGHBOR PLACE</Address1>
+        <City>KANATA</City>
+        <State>ON</State>
+        <PostalCode>K2T 1C4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>BRAMPTON-1</AddressLocationNumber>
+        <AddressName>Renin Brampton</AddressName>
+        <Address1>110 Walker Dr.</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>HOME DEPOT CANADA SPECIAL SO</AddressName>
+        <Address1>PO BOX 105524</Address1>
+        <City>Atlanta</City>
+        <State>GA</State>
+        <PostalCode>30348</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>7108</AddressLocationNumber>
+        <AddressName>HOME DEPOT CANADA SPECIAL SO</AddressName>
+        <Address1>PO BOX 105524</Address1>
+        <City>Atlanta</City>
+        <State>GA</State>
+        <PostalCode>30348</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>HOME DEPOT CANADA SPECIAL SO</AddressName>
+        <Address1>PO BOX 105524</Address1>
+        <City>Atlanta</City>
+        <State>GA</State>
+        <PostalCode>30348</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1313473</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1328359</ReferenceID>
+      </Reference>
+      <ChargesAllowances>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>I170</AllowChrgCode>
+        <AllowChrgAmt>0.49</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>C300</AllowChrgCode>
+        <AllowChrgAmt>2.46</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>13.87</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>E210</AllowChrgCode>
+        <AllowChrgAmt>7.07</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+          <InvoiceNumber>PSI1320586</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>10</LineSequenceNumber>
+          <BuyerPartNumber>129986</BuyerPartNumber>
+          <VendorPartNumber>N/A</VendorPartNumber>
+          <ConsumerPackageCode>999999999993</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>EXPRESS ONE  WHITE 45-50-FX</PartDescription1>
+          <OrderQty>1</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>196.47</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>196.47</ExtendedItemTotal>
+          <ProductProcessDescription>060</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>SP</TaxTypeCode>
+        <TaxAmount>22.44</TaxAmount>
+        <TaxPercent>13.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <InvoiceNumber>PSI1320586</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>195.02</TotalAmount>
+        <TotalNetSalesAmount>196.47</TotalNetSalesAmount>
+        <TotalQtyInvoiced>1.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

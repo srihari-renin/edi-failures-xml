@@ -1,0 +1,143 @@
+<PurchaseOrders noNamespaceSchemaLocation="PurchaseOrders.xsd">
+  <PurchaseOrder>
+    <Header>
+      <OrderHeader>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <PurchaseOrderNumber>538321703</PurchaseOrderNumber>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <PurchaseOrderTypeCode>OS</PurchaseOrderTypeCode>
+        <PurchaseOrderDate>2026-08-16</PurchaseOrderDate>
+        <ContractNumber>538321703850</ContractNumber>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <CustomerOrderNumber>0617577379</CustomerOrderNumber>
+        <TicketingCodeReference>60020042</TicketingCodeReference>
+      </OrderHeader>
+      <Date>
+        <DateTimeQualifier1>002</DateTimeQualifier1>
+        <Date1>2026-08-30</Date1>
+      </Date>
+      <Address>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>7001</AddressLocationNumber>
+        <AddressName>ELLESMERE - 7001</AddressName>
+        <Address1>428 ELLESMERE ROAD</Address1>
+        <City>SCARBOROUGH</City>
+        <State>ON</State>
+        <PostalCode>M1R 4E6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <AddressTypeCode>OB</AddressTypeCode>
+        <AddressName>7001</AddressName>
+      </Address>
+      <Notes>
+        <NoteInformationField>ELLESMERE - 7001,428 ELLESMERE ROAD,,SCARBOROUGH,ON,M1R 4E6</NoteInformationField>
+      </Notes>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>I170</AllowChrgCode>
+        <AllowChrgAmt>0.3</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>0.25</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>C300</AllowChrgCode>
+        <AllowChrgAmt>1.5</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>1.25</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>E210</AllowChrgCode>
+        <AllowChrgAmt>4.26</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>3.6</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>8.49</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>7.06</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <Miscellaneous>
+        <Description1>INTERCHANGE</Description1>
+        <Description2>000628227</Description2>
+      </Miscellaneous>
+      <Miscellaneous>
+        <Description1>FUNCTIONALGROUP</Description1>
+        <Description2>527162</Description2>
+      </Miscellaneous>
+      <Miscellaneous>
+        <Description1>TRANSACTION</Description1>
+        <Description2>27163</Description2>
+      </Miscellaneous>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <OrderLine>
+          <LineSequenceNumber>10</LineSequenceNumber>
+          <BuyerPartNumber>172674</BuyerPartNumber>
+          <VendorPartNumber>N/A</VendorPartNumber>
+          <OrderQty>1</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>120.24</UnitPrice>
+        </OrderLine>
+        <Miscellaneous>
+          <Qualifier1>GEN</Qualifier1>
+          <Description1>Notes=________________________________ 08/16/2026, 13:31:17, BXW4509 DSGNR:BXW45</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>GEN</Qualifier1>
+          <Description1>09</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>08</Qualifier1>
+          <Description1>S/O KINGSTAR PRODUCTS</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>________________________________ 08/16/2026, 13:31:17, BXW4509 Bypass Metal Clos</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>et Doors{#1} |Number Wide=1|TipToTip Width=72|TipToTip Height=80.5|Series=Bypass</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>Metal Closet Doors|Product=EntryDoor|Call Width=7272|Call Height=80 1/280.5|Roo</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>mLocation_StdPK=|Model choice=Flush Panel|Number of Panels=2|Hardware=Top Roll|P</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>rofile=Slimline|Insert Type=Panel Board|Design=Wood Grain Panel|Frame Finish=Bri</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>ght White|Insert Finish=Bright White|Handle=Standard|EDS Slab=Always True|EDS Gl</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>ass=Always True|NAV=BY0100BWWTC072080|SKU=1000172674|MVNDR_NBR=70001340|MVNDR_NM</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>=Renin|Customer Service =800-493-5263|Catalogue Version Date=27/04/2026</Description1>
+        </Miscellaneous>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <TotalLineItemNumber>1</TotalLineItemNumber>
+      <TotalQuantity>1</TotalQuantity>
+    </Summary>
+  </PurchaseOrder>
+</PurchaseOrders>

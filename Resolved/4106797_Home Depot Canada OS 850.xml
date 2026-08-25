@@ -1,0 +1,139 @@
+<PurchaseOrders noNamespaceSchemaLocation="PurchaseOrders.xsd">
+  <PurchaseOrder>
+    <Header>
+      <OrderHeader>
+        <TradingPartnerId>820ALLRENINHOL1</TradingPartnerId>
+        <PurchaseOrderNumber>537765507</PurchaseOrderNumber>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <PurchaseOrderTypeCode>OS</PurchaseOrderTypeCode>
+        <PurchaseOrderDate>2026-07-15</PurchaseOrderDate>
+        <ContractNumber>537765507850</ContractNumber>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <CustomerOrderNumber>0617285968</CustomerOrderNumber>
+        <TicketingCodeReference>60020042</TicketingCodeReference>
+      </OrderHeader>
+      <Date>
+        <DateTimeQualifier1>002</DateTimeQualifier1>
+        <Date1>2026-08-26</Date1>
+      </Date>
+      <Address>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>7108</AddressLocationNumber>
+        <AddressName>KANATA - 7108</AddressName>
+        <Address1>10 FRANK NIGHBOR PLACE</Address1>
+        <City>KANATA</City>
+        <State>ON</State>
+        <PostalCode>K2T 1C4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <AddressTypeCode>OB</AddressTypeCode>
+        <AddressName>7108</AddressName>
+      </Address>
+      <Notes>
+        <NoteInformationField>KANATA - 7108,10 FRANK NIGHBOR PLACE,,KANATA,ON,K2T 1C4</NoteInformationField>
+      </Notes>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>I170</AllowChrgCode>
+        <AllowChrgAmt>0.49</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>0.25</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>C300</AllowChrgCode>
+        <AllowChrgAmt>2.46</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>1.25</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>E210</AllowChrgCode>
+        <AllowChrgAmt>6.97</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>3.6</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>13.87</AllowChrgAmt>
+        <AllowChrgPercentBasis>3</AllowChrgPercentBasis>
+        <AllowChrgPercent>7.06</AllowChrgPercent>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+      </ChargesAllowances>
+      <Miscellaneous>
+        <Description1>INTERCHANGE</Description1>
+        <Description2>000627067</Description2>
+      </Miscellaneous>
+      <Miscellaneous>
+        <Description1>FUNCTIONALGROUP</Description1>
+        <Description2>526915</Description2>
+      </Miscellaneous>
+      <Miscellaneous>
+        <Description1>TRANSACTION</Description1>
+        <Description2>26916</Description2>
+      </Miscellaneous>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <OrderLine>
+          <LineSequenceNumber>10</LineSequenceNumber>
+          <BuyerPartNumber>129986</BuyerPartNumber>
+          <VendorPartNumber>N/A</VendorPartNumber>
+          <OrderQty>1</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>196.47</UnitPrice>
+        </OrderLine>
+        <Miscellaneous>
+          <Qualifier1>GEN</Qualifier1>
+          <Description1>Notes=________________________________ 07/15/2026, 19:46:13, WXK3995 DSGNR:WXK39</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>GEN</Qualifier1>
+          <Description1>95</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>08</Qualifier1>
+          <Description1>S/O POCKET/FOLDING DOORS</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>________________________________ 07/15/2026, 19:46:13, WXK3995 Oakmont Folding D</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>oor{#1} |Number Wide=1|TipToTip Measurement Type=Finished Opening|TipToTip Width</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>=44.75|TipToTip Height=93.625|Series=Oakmont Folding Door|Product=EntryDoor|Room</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>Location_StdPK=|Type of Door=Single Door (1 fixed Side)|Panel Color=White|EDS Sl</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>ab=Always True|EDS Glass=Always True|NAV=EX5096H|SKU=1000129986|MVNDR_NBR=700013</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>40|MVNDR_NM=Renin|Customer Service =800-493-5263|Catalogue Version Date=27/04/20</Description1>
+        </Miscellaneous>
+        <Miscellaneous>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>26</Description1>
+        </Miscellaneous>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <TotalLineItemNumber>1</TotalLineItemNumber>
+      <TotalQuantity>1</TotalQuantity>
+    </Summary>
+  </PurchaseOrder>
+</PurchaseOrders>
