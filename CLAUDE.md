@@ -94,19 +94,33 @@ clone or restore from at any time.
    per case.
 4. Merge, then delete the branch (`gh pr merge --squash --delete-branch` or
    the equivalent from the GitHub UI). Squash so `master` gets one clean
-   commit per resolved case.
-5. **Working two cases at once** (you and someone else, or two parallel
+   commit per resolved case. This deletes the remote branch and, if you're
+   sitting on a normal checkout of that branch, the local one too.
+5. **Clean up the worktree after merge, every time.** If the case's work
+   happened in a `git worktree add` checkout (per step 6 below), merging the
+   PR does not remove the worktree or its local branch — do both explicitly
+   right after the merge:
+   ```
+   git worktree remove <worktree-path>
+   git branch -d case/<customer-slug>/<reference-id>
+   ```
+   Run these from the main checkout, not from inside the worktree being
+   removed. If `git branch -d` refuses because the squash-merge commit isn't
+   detected as merged, confirm the PR actually merged into `master` and use
+   `-D` — don't skip cleanup and leave the stale branch/worktree around.
+6. **Working two cases at once** (you and someone else, or two parallel
    Claude sessions): each just branches from `master` and works
    independently — no coordination needed until merge time. The only file
    likely to conflict is `SKILL.md`'s Quick index table, since every case
    adds a row there; if both branches add a row in the same place, Git will
    flag a merge conflict — resolve it by keeping both new rows, nothing more
    is needed.
-6. **Running several cases in parallel** (e.g. `git worktree add` off
+7. **Running several cases in parallel** (e.g. `git worktree add` off
    different branches so more than one session can work at once without
    switching branches in the same checkout): each worktree still follows
-   steps 1–5 independently on its own `case/`/`chore/` branch. Use the task
-   tracking files below so it's visible what every worktree is doing.
+   steps 1–5 independently on its own `case/`/`chore/` branch, and step 5's
+   cleanup once that worktree's PR merges. Use the task tracking files below
+   so it's visible what every worktree is doing.
 
 ## Task tracking files
 
