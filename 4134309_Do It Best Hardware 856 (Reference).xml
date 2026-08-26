@@ -1,0 +1,230 @@
+<AdvanceShipNotices>
+  <AdvanceShipNotice>
+    <Header>
+      <ShipmentHeader>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HS</RecordType>
+        <ShipmentDate>20260807</ShipmentDate>
+        <Vendor>1264</Vendor>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <TsetTypeCode>NE</TsetTypeCode>
+        <ShipNoticeDate>20260807</ShipNoticeDate>
+        <ShipNoticeTime>1054</ShipNoticeTime>
+        <ASNStructureCode>0001</ASNStructureCode>
+        <ShipmentLadingQuantity>4</ShipmentLadingQuantity>
+        <ShipmentWeight>578.00</ShipmentWeight>
+        <ShipmentWeightUOM>LB</ShipmentWeightUOM>
+        <CarrierAlphaCode>ODFL</CarrierAlphaCode>
+        <CarrierTransMethodCode>M</CarrierTransMethodCode>
+        <CarrierRouting>OLD DOMINION FREIGHT LINE</CarrierRouting>
+        <BillOfLadingNumber>SS1322542</BillOfLadingNumber>
+        <CarrierProNumber>04116241052</CarrierProNumber>
+        <FOBPayCode>PP</FOBPayCode>
+        <FOBLocationQualifier>DE</FOBLocationQualifier>
+        <FOBLocationDescription>Vendor Responsible to Route</FOBLocationDescription>
+        <CurrentScheduledDeliveryDate>20260818</CurrentScheduledDeliveryDate>
+      </ShipmentHeader>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>0002</AddressLocationNumber>
+        <AddressName>Do It Best Corp. - Dixon</AddressName>
+        <Address1>816 W. Progress Drive</Address1>
+        <City>Dixon</City>
+        <State>IL</State>
+        <PostalCode>610219610</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <LocationCodeQualifier>9</LocationCodeQualifier>
+        <AddressLocationNumber>0069371300000</AddressLocationNumber>
+        <AddressName>ALLIANCE INTERNATIONAL LLC </AddressName>
+        <Address1>PO BOX 868  </Address1>
+        <City>FT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>468010868</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>C40004105</AddressLocationNumber>
+        <AddressName>DO IT BEST CORPORATION - WAREHOUSE</AddressName>
+        <Address1>PO BOX 868                                        </Address1>
+        <City>FORT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>468010868</PostalCode>
+      </Address>
+    </Header>
+    <OrderLevel>
+      <OrderHeader>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1322542</ShipmentIdentification>
+        <RecordType>HO</RecordType>
+        <OrderNumber>SO1318477</OrderNumber>
+        <PurchaseOrderNumber>DIB299402</PurchaseOrderNumber>
+        <PurchaseOrderDate>20260730</PurchaseOrderDate>
+        <OrderLadingQuantity>4</OrderLadingQuantity>
+        <OrderStatusCode>CC</OrderStatusCode>
+      </OrderHeader>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1322542</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackWeight>0.00</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00300430440013225423</MarksAndNumbers1>
+        </Pack>
+        <Miscellaneous>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1322542</ShipmentIdentification>
+          <RecordType>ML</RecordType>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>04116241052</Description1>
+        </Miscellaneous>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1322542</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>1</LineSequenceNumber>
+              <BuyerPartNumber>263354</BuyerPartNumber>
+              <VendorPartNumber>201200</VendorPartNumber>
+              <ConsumerPackageCode>043044210059</ConsumerPackageCode>
+              <PartDescription1>P-2436-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+              <OrderQty>42</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>20.26</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>42.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1322542</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>2</LineSequenceNumber>
+              <BuyerPartNumber>266817</BuyerPartNumber>
+              <VendorPartNumber>206190</VendorPartNumber>
+              <ConsumerPackageCode>043044110298</ConsumerPackageCode>
+              <PartDescription1>PLASTIC FRM DR MIRR 49" X 13" BLACK</PartDescription1>
+              <OrderQty>20</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>11.39</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>20.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1322542</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>3</LineSequenceNumber>
+              <BuyerPartNumber>266825</BuyerPartNumber>
+              <VendorPartNumber>206230</VendorPartNumber>
+              <ConsumerPackageCode>043044110304</ConsumerPackageCode>
+              <PartDescription1>PLASTIC FRM DR MIRR 49" X 13" WHITE</PartDescription1>
+              <OrderQty>10</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>11.39</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>10.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1322542</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>4</LineSequenceNumber>
+              <BuyerPartNumber>278653</BuyerPartNumber>
+              <VendorPartNumber>201240</VendorPartNumber>
+              <ConsumerPackageCode>043044210110</ConsumerPackageCode>
+              <PartDescription1>P-3036-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+              <OrderQty>15</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>27.23</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>15.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+    </OrderLevel>
+    <Summary>
+      <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+      <ShipmentIdentification>SS1322542</ShipmentIdentification>
+      <RecordType>ST</RecordType>
+      <TotalLineItems>4</TotalLineItems>
+    </Summary>
+  </AdvanceShipNotice>
+</AdvanceShipNotices>

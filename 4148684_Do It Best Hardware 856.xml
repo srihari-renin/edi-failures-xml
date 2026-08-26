@@ -1,0 +1,209 @@
+<AdvanceShipNotices>
+  <AdvanceShipNotice>
+    <Header>
+      <ShipmentHeader>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HS</RecordType>
+        <ShipmentDate>20260819</ShipmentDate>
+        <Vendor>1264</Vendor>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <TsetTypeCode>NE</TsetTypeCode>
+        <ShipNoticeDate>20260819</ShipNoticeDate>
+        <ShipNoticeTime>1157</ShipNoticeTime>
+        <ASNStructureCode>0001</ASNStructureCode>
+        <ShipmentLadingQuantity>2</ShipmentLadingQuantity>
+        <ShipmentWeight>0.00</ShipmentWeight>
+        <ShipmentWeightUOM>LB</ShipmentWeightUOM>
+        <CarrierTransMethodCode>M</CarrierTransMethodCode>
+        <BillOfLadingNumber>SS1326194</BillOfLadingNumber>
+        <CarrierProNumber>04116241144</CarrierProNumber>
+        <FOBPayCode>PP</FOBPayCode>
+        <FOBLocationQualifier>DE</FOBLocationQualifier>
+        <FOBLocationDescription>Vendor Responsible to Route</FOBLocationDescription>
+        <CurrentScheduledDeliveryDate>20260825</CurrentScheduledDeliveryDate>
+      </ShipmentHeader>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>0008</AddressLocationNumber>
+        <AddressName>Do It Best Corp. - Mesquite</AddressName>
+        <Address1>1450 W. Pioneer Boulevard</Address1>
+        <City>Mesquite</City>
+        <State>NV</State>
+        <PostalCode>89027</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <LocationCodeQualifier>9</LocationCodeQualifier>
+        <AddressLocationNumber>0069371300000</AddressLocationNumber>
+        <AddressName>ALLIANCE INTERNATIONAL LLC </AddressName>
+        <Address1>PO BOX 868  </Address1>
+        <City>FT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>468010868</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>C40004105</AddressLocationNumber>
+        <AddressName>DO IT BEST CORPORATION - WAREHOUSE</AddressName>
+        <Address1>PO BOX 868                                        </Address1>
+        <City>FORT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>468010868</PostalCode>
+      </Address>
+    </Header>
+    <OrderLevel>
+      <OrderHeader>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326194</ShipmentIdentification>
+        <RecordType>HO</RecordType>
+        <OrderNumber>SO1319556</OrderNumber>
+        <PurchaseOrderNumber>DIB300124</PurchaseOrderNumber>
+        <PurchaseOrderDate>20260803</PurchaseOrderDate>
+        <OrderLadingQuantity>2</OrderLadingQuantity>
+        <OrderStatusCode>CP</OrderStatusCode>
+      </OrderHeader>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1326194</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackWeight>0.00</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00300430440013261940</MarksAndNumbers1>
+        </Pack>
+        <Miscellaneous>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1326194</ShipmentIdentification>
+          <RecordType>ML</RecordType>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>04116241144</Description1>
+        </Miscellaneous>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1326194</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>1</LineSequenceNumber>
+              <BuyerPartNumber>263346</BuyerPartNumber>
+              <VendorPartNumber>201180</VendorPartNumber>
+              <ConsumerPackageCode>043044210035</ConsumerPackageCode>
+              <PartDescription1>P-2430-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+              <OrderQty>24</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>17.76</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>0.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1326194</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackWeight>0.00</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00300430440013261940</MarksAndNumbers1>
+        </Pack>
+        <Miscellaneous>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1326194</ShipmentIdentification>
+          <RecordType>ML</RecordType>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>04116241144</Description1>
+        </Miscellaneous>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1326194</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>2</LineSequenceNumber>
+              <BuyerPartNumber>278653</BuyerPartNumber>
+              <VendorPartNumber>201240</VendorPartNumber>
+              <ConsumerPackageCode>043044210110</ConsumerPackageCode>
+              <PartDescription1>P-3036-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+              <OrderQty>40</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>27.23</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>40.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+    </OrderLevel>
+    <Summary>
+      <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+      <ShipmentIdentification>SS1326194</ShipmentIdentification>
+      <RecordType>ST</RecordType>
+      <TotalLineItems>2</TotalLineItems>
+    </Summary>
+  </AdvanceShipNotice>
+</AdvanceShipNotices>

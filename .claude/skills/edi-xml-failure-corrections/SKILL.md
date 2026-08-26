@@ -92,6 +92,8 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Do It Best Hardware | 810 | `missing-segment` | resolved | [cases/do-it-best-hardware-810.md](cases/do-it-best-hardware-810.md#case-01--810--missing-segment--2026-08-26) |
+| 01 | Do It Best Hardware | 856 | `missing-segment` | resolved | [cases/do-it-best-hardware-856.md](cases/do-it-best-hardware-856.md#case-01--856--missing-segment--2026-08-26) |
 | 02 | Home Depot Canada | 810 | `price-mismatch` | resolved | [cases/home-depot-canada-810.md](cases/home-depot-canada-810.md#case-02--810--price-mismatch--2026-08-25) |
 | 01 | Home Depot Canada | 810 | `price-mismatch` | resolved | [cases/home-depot-canada-810.md](cases/home-depot-canada-810.md#case-01--810--price-mismatch--2026-08-25) |
 | 01 | Home Care TimbrMart | 810 Credit Memo | `credit-sign-convention` | resolved | [cases/home-care-timbrmart-810-credit-memo.md](cases/home-care-timbrmart-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-08-21) |
