@@ -15,3 +15,4 @@ keeping both new rows — same rule as the Quick index table in the skill.
 | Task | Branch | Started | Notes |
 |---|---|---|---|
 | DIB PO DIB300124 carrier fields — ASN SS1326194 (856) and invoice PSI1318473 (810), both `missing-segment` | `claude/dib-asn-invoice-errors-fe4453` | 2026-08-26 | Both `_v2` fixes applied (CarrierAlphaCode/CarrierRouting = ODFL / Old Dominion). Awaiting resend to DIB and partner confirmation before moving to Resolved/. |
+| True Value PO 08062302W2700 carrier fields — ASN SS1326195 (856), `missing-segment` | `claude/true-value-error-validation-b67e71` | 2026-08-26 | `_v2` fix applied (CarrierAlphaCode/CarrierRouting = ODFL / Old Dominion Freight Line, confirmed by user). Awaiting resend to True Value and partner confirmation before moving to Resolved/. |

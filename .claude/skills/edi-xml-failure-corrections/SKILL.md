@@ -92,6 +92,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | True Value | 856 | `missing-segment` | resolved | [cases/true-value-856.md](cases/true-value-856.md#case-01--856--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 810 | `missing-segment` | resolved | [cases/do-it-best-hardware-810.md](cases/do-it-best-hardware-810.md#case-01--810--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 856 | `missing-segment` | resolved | [cases/do-it-best-hardware-856.md](cases/do-it-best-hardware-856.md#case-01--856--missing-segment--2026-08-26) |
 | 02 | Home Depot Canada | 810 | `price-mismatch` | resolved | [cases/home-depot-canada-810.md](cases/home-depot-canada-810.md#case-02--810--price-mismatch--2026-08-25) |

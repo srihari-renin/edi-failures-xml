@@ -1,0 +1,195 @@
+<AdvanceShipNotices>
+  <AdvanceShipNotice>
+    <Header>
+      <ShipmentHeader>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HS</RecordType>
+        <ShipmentDate>20260819</ShipmentDate>
+        <Vendor>0058602</Vendor>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <ShipNoticeDate>20260819</ShipNoticeDate>
+        <ShipNoticeTime>1157</ShipNoticeTime>
+        <ASNStructureCode>0001</ASNStructureCode>
+        <ShipmentLadingQuantity>1</ShipmentLadingQuantity>
+        <ShipmentWeight>138.90</ShipmentWeight>
+        <ShipmentWeightUOM>LB</ShipmentWeightUOM>
+        <CarrierTransMethodCode>M</CarrierTransMethodCode>
+        <BillOfLadingNumber>WSH218632</BillOfLadingNumber>
+        <CarrierProNumber>04116241151</CarrierProNumber>
+        <FOBPayCode>PP</FOBPayCode>
+        <CurrentScheduledDeliveryDate>20260819</CurrentScheduledDeliveryDate>
+        <CurrentScheduledShipDate>20260819</CurrentScheduledShipDate>
+      </ShipmentHeader>
+      <Reference>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>YD</ReferenceQual>
+        <ReferenceID>V</ReferenceID>
+      </Reference>
+      <Contact>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <RecordType>CH</RecordType>
+        <ContactTypeCode>BD</ContactTypeCode>
+        <ContactName>026</ContactName>
+      </Contact>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>9</LocationCodeQualifier>
+        <AddressLocationNumber>1340918240027</AddressLocationNumber>
+        <AddressName>TV HARDWARE DIST LLC</AddressName>
+        <Address1>12 TRADEPORT ROAD</Address1>
+        <City>HANOVER TWP</City>
+        <State>PA</State>
+        <PostalCode>18706</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <LocationCodeQualifier>1</LocationCodeQualifier>
+        <AddressLocationNumber>134091824</AddressLocationNumber>
+        <AddressName>TV HARDWARE DIST LLC </AddressName>
+        <Address1>8600 W. BRYN MAWR AVE  </Address1>
+        <City>CHICAGO</City>
+        <State>IL</State>
+        <PostalCode>60631-9998</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>1</LocationCodeQualifier>
+        <AddressLocationNumber>134091824</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>C40003767</AddressLocationNumber>
+        <AddressName>TRUE VALUE CORPORATION - WAREHOUSE</AddressName>
+        <Address1>8600 W BYRN MAWR</Address1>
+        <City>CHICAGO</City>
+        <State>IL</State>
+        <PostalCode>606313505</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+      </Address>
+    </Header>
+    <OrderLevel>
+      <OrderHeader>
+        <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1326195</ShipmentIdentification>
+        <RecordType>HO</RecordType>
+        <OrderNumber>SO1321007</OrderNumber>
+        <InvoiceNumber>PSI1318474</InvoiceNumber>
+        <InvoiceDate>20260819</InvoiceDate>
+        <PurchaseOrderNumber>08062302W2700</PurchaseOrderNumber>
+        <PurchaseOrderDate>20260806</PurchaseOrderDate>
+        <OrderQtyPackingCode>CTN</OrderQtyPackingCode>
+        <OrderLadingQuantity>1</OrderLadingQuantity>
+        <OrderWeight>138.90</OrderWeight>
+        <OrderWeightUOM>LB</OrderWeightUOM>
+        <Department>W</Department>
+        <Vendor>0058602</Vendor>
+        <OrderStatusCode>CC</OrderStatusCode>
+        <DeliveryDate>20260819</DeliveryDate>
+      </OrderHeader>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1326195</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackSize>30.00</PackSize>
+          <PackUOM>EA</PackUOM>
+          <PackWeight>138.90</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <PackLength>40.00</PackLength>
+          <PackWidth>32.00</PackWidth>
+          <PackHeight>96.00</PackHeight>
+          <PackagingDescriptionCode>1</PackagingDescriptionCode>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00100430440009269314</MarksAndNumbers1>
+          <MarksAndNumbersQualifier2>SM</MarksAndNumbersQualifier2>
+          <MarksAndNumbers2>PK926931</MarksAndNumbers2>
+        </Pack>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1326195</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>0001</LineSequenceNumber>
+              <BuyerPartNumber>884836</BuyerPartNumber>
+              <VendorPartNumber>206230</VendorPartNumber>
+              <ConsumerPackageCode>043044110304</ConsumerPackageCode>
+              <GTIN>00043044110304</GTIN>
+              <PartDescription1>PLASTIC FRM DR MIRR 49" X 13" WHITE</PartDescription1>
+              <OrderQty>30</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>11.39</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <PackUOM>EA</PackUOM>
+              <InnerPack>1</InnerPack>
+              <ShipQty>30.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+    </OrderLevel>
+    <Summary>
+      <TradingPartnerId>GZWALLRENINHOLD</TradingPartnerId>
+      <ShipmentIdentification>SS1326195</ShipmentIdentification>
+      <RecordType>ST</RecordType>
+      <TotalLineItems>1</TotalLineItems>
+    </Summary>
+  </AdvanceShipNotice>
+</AdvanceShipNotices>
