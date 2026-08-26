@@ -1,0 +1,246 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260807</InvoiceDate>
+        <PurchaseOrderDate>20260730</PurchaseOrderDate>
+        <PurchaseOrderNumber>DIB299402</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>USD</BuyersCurrency>
+        <SellersCurrency>USD</SellersCurrency>
+        <Vendor>1264</Vendor>
+        <FOBPayCode>PP</FOBPayCode>
+        <FOBLocationQualifier>DE</FOBLocationQualifier>
+        <FOBLocationDescription>Vendor Responsible to Route</FOBLocationDescription>
+        <CarrierAlphaCode>ODFL</CarrierAlphaCode>
+        <CarrierRouting>OLD DOMINION FREIGHT LINE</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>04116241052</CarrierProNumber>
+        <BillOfLadingNumber>SS1322542</BillOfLadingNumber>
+        <ShipDate>20260806</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsType>01</TermsType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260903</TermsDiscountDate>
+        <TermsDiscountDueDays>27</TermsDiscountDueDays>
+        <TermsNetDueDate>20260918</TermsNetDueDate>
+        <TermsNetDueDays>45</TermsNetDueDays>
+        <TermsDiscountAmount>32.02</TermsDiscountAmount>
+        <TermsDescription>2%30D/N45</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin US LLC</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>0002</AddressLocationNumber>
+        <AddressName>Do It Best Corp. - Dixon</AddressName>
+        <Address1>816 W. Progress Drive</Address1>
+        <City>Dixon</City>
+        <State>IL</State>
+        <PostalCode>610219610</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <LocationCodeQualifier>9</LocationCodeQualifier>
+        <AddressLocationNumber>0069371300000</AddressLocationNumber>
+        <AddressName>ALLIANCE INTERNATIONAL LLC </AddressName>
+        <Address1>PO BOX 868  </Address1>
+        <City>FT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>468010868</PostalCode>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>1264</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>0002</AddressLocationNumber>
+        <AddressName>DO IT BEST CORPORATION - WAREHOUSE</AddressName>
+        <Address1>PO BOX 868                                        </Address1>
+        <City>FORT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>46801</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>DO IT BEST CORPORATION - WAREHOUSE</AddressName>
+        <Address1>PO BOX 868                                        </Address1>
+        <City>FORT WAYNE</City>
+        <State>IN</State>
+        <PostalCode>46801</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1318477</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1322542</ReferenceID>
+      </Reference>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1314855</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <BuyerPartNumber>263354</BuyerPartNumber>
+          <VendorPartNumber>201200</VendorPartNumber>
+          <ConsumerPackageCode>043044210059</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>P-2436-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+          <OrderQty>42</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>20.26</UnitPrice>
+          <ShipQty>42.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>850.92</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1314855</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>2</LineSequenceNumber>
+          <BuyerPartNumber>266817</BuyerPartNumber>
+          <VendorPartNumber>206190</VendorPartNumber>
+          <ConsumerPackageCode>043044110298</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>PLASTIC FRM DR MIRR 49" X 13" BLACK</PartDescription1>
+          <OrderQty>20</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>11.39</UnitPrice>
+          <ShipQty>20.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>227.80</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1314855</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>3</LineSequenceNumber>
+          <BuyerPartNumber>266825</BuyerPartNumber>
+          <VendorPartNumber>206230</VendorPartNumber>
+          <ConsumerPackageCode>043044110304</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>PLASTIC FRM DR MIRR 49" X 13" WHITE</PartDescription1>
+          <OrderQty>10</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>11.39</UnitPrice>
+          <ShipQty>10.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>113.90</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1314855</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>4</LineSequenceNumber>
+          <BuyerPartNumber>278653</BuyerPartNumber>
+          <VendorPartNumber>201240</VendorPartNumber>
+          <ConsumerPackageCode>043044210110</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>P-3036-FBV FRLS RECT MIRR BEVEL</PartDescription1>
+          <OrderQty>15</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>27.23</UnitPrice>
+          <ShipQty>15.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>408.45</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Totals>
+        <TradingPartnerId>562ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1314855</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>1601.07</TotalAmount>
+        <TotalNetSalesAmount>1601.07</TotalNetSalesAmount>
+        <TotalQtyInvoiced>87.00</TotalQtyInvoiced>
+        <TotalWeight>578.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>4</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

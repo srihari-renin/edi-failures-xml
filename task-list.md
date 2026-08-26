@@ -14,3 +14,4 @@ keeping both new rows — same rule as the Quick index table in the skill.
 
 | Task | Branch | Started | Notes |
 |---|---|---|---|
+| DIB ASN SS1326194 (856, `missing-segment`) — resolved, invoice PSI1318473 (810, same PO DIB300124) still open | `claude/dib-asn-invoice-errors-fe4453` | 2026-08-26 | Carrier fields added in `_v2`; invoice `Carrier Routing is required` error not yet diagnosed |
