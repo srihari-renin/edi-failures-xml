@@ -54,5 +54,5 @@ Entry template — copy this block for every new case AND every new version:
   - Added `CarrierAlphaCode` = `ODFL` and `CarrierRouting` = `OLD DOMINION FREIGHT LINE` to `ShipmentHeader`, in the same position as the reference document.
   - User confirmed Old Dominion Freight Line was the actual carrier for this shipment (BOL WSH218632, Carrier Pro 04116241151) — not inferred from the reference alone.
   - Nothing else changed.
-- **Files:** `4148685_True Value 856.xml` → `4148685_True Value 856_v2.xml`
-- **Status:** resolved (fix applied). Awaiting confirmation the corrected ASN was accepted before moving files to `Resolved/`.
+- **Files:** `Resolved/4148685_True Value 856.xml` → `Resolved/4148685_True Value 856_v2.xml`
+- **Status:** resolved. Corrected ASN sent to True Value, confirmed by the user 2026-08-26. Files moved to `Resolved/`.
