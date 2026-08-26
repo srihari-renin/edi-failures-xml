@@ -52,5 +52,5 @@ Entry template — copy this block for every new case AND every new version:
   - Added `CarrierAlphaCode` = `ODFL` and `CarrierRouting` = `OLD DOMINION FREIGHT LINE` to `ShipmentHeader`, in the same position as the reference document.
   - User confirmed Old Dominion Freight Line was the actual carrier for this shipment (same carrier as the reference document) — not inferred from the reference alone.
   - Nothing else changed.
-- **Files:** `4148684_Do It Best Hardware 856.xml` → `4148684_Do It Best Hardware 856_v2.xml`
-- **Status:** resolved (fix applied; awaiting resend/confirmation from partner).
+- **Files:** `Resolved/4148684_Do It Best Hardware 856.xml` → `Resolved/4148684_Do It Best Hardware 856_v2.xml`
+- **Status:** resolved. Corrected ASN sent to Do It Best, confirmed by the user 2026-08-26. Files moved to `Resolved/`.

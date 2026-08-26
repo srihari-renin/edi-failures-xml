@@ -52,5 +52,5 @@ Entry template — copy this block for every new case AND every new version:
 - **Fix (applied in _v2):**
   - Added `CarrierAlphaCode` = `ODFL` and `CarrierRouting` = `OLD DOMINION FREIGHT LINE` to `InvoiceHeader`, in the same position as the reference document.
   - Nothing else changed.
-- **Files:** `4148721_Do It Best Hardware 810 Sales Invoice.xml` → `4148721_Do It Best Hardware 810 Sales Invoice_v2.xml`
-- **Status:** resolved (fix applied; awaiting resend/confirmation from partner).
+- **Files:** `Resolved/4148721_Do It Best Hardware 810 Sales Invoice.xml` → `Resolved/4148721_Do It Best Hardware 810 Sales Invoice_v2.xml`
+- **Status:** resolved. Corrected invoice sent to Do It Best, confirmed by the user 2026-08-26. Files moved to `Resolved/`.
