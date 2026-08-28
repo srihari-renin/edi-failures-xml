@@ -84,6 +84,17 @@ Partner notes section.
   invoice to that address until caught. This was the root cause of
   Home Hardware Case 01 (store `5233-2`, Glenboro MB) and is likely to recur
   whenever a new ship-to is added for any customer, not just Home Hardware.
+- **Any partner, missing pack/line data on an 856:** check *how the order was
+  shipped in NAV* before treating it as a mapping defect. NAV sources the
+  `<Pack>` and `<ItemLevel>` blocks from a **warehouse shipment's package
+  records**. Ship and invoice straight from the sales order — which is the
+  usual fallback when a warehouse shipment won't post — and the ASN still
+  generates, but with zeroed weights/dimensions/quantities, no SSCC, and **no
+  line items at all**. Proven on Home Depot.CA MDO Case 01; the mechanism is
+  NAV-side, not partner-side, so expect it for any trading partner. If a
+  warehouse shipment has to be abandoned, capture its package records **and**
+  its Shipping FastTab (carrier, tracking/PRO number, seal, total weight)
+  before deleting it — that data is unrecoverable afterwards.
 - **`CarrierProNumber` format `TST-CF 701 ######` → carrier is TST Overland
   Express** (`CarrierAlphaCode` `OVLD`, `CarrierRouting` `TST Overland
   Express`). Confirmed on two different customers with this exact pro-number
@@ -99,6 +110,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Depot.CA MDO | 856 | `missing-segment` | corrected, awaiting confirmation | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
 | 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |
 | 01 | True Value | 856 | `missing-segment` | resolved | [cases/true-value-856.md](cases/true-value-856.md#case-01--856--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 810 | `missing-segment` | resolved | [cases/do-it-best-hardware-810.md](cases/do-it-best-hardware-810.md#case-01--810--missing-segment--2026-08-26) |
