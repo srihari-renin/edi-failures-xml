@@ -84,16 +84,18 @@ Partner notes section.
   invoice to that address until caught. This was the root cause of
   Home Hardware Case 01 (store `5233-2`, Glenboro MB) and is likely to recur
   whenever a new ship-to is added for any customer, not just Home Hardware.
-- **Any partner: a "penny adjustment" used to clear a NAV posting error
-  corrupts the invoiced price.** Nudging a sales line's price to force a
-  stuck document through moves it off the PO price, and the resulting 810
-  inherits it — with every total, tax and allowance recomputed consistently
-  around the *wrong* figure, so the invoice foots correctly and passes
-  validation. Nothing signals the defect; it is only visible by comparing the
-  810 to its 850. Confirmed on Home Depot.CA MDO 810 Case 01 (3 cents/unit,
-  $0.18 under-billed). **Whenever an order's history includes a manual price
-  nudge, diff the invoice against the PO before sending**, and expect the
-  allowances to have drifted with it.
+- **Any partner: after a "penny adjustment" in NAV, always correct the
+  invoice price back to the PO.** A penny adjustment on the sales line is the
+  established way to clear certain NAV posting errors — it is a deliberate
+  remedy, not a mistake. Its known side effect is that the line price no
+  longer matches the PO, and the resulting 810 inherits the adjusted figure,
+  with tax, totals **and every percentage-based allowance** recomputed
+  consistently around it. The invoice therefore foots correctly and passes
+  validation with nothing to signal the defect — it is visible only by
+  diffing the 810 against its 850. Confirmed on Home Depot.CA MDO 810 Case 01
+  (3 cents/unit, $0.18 under-billed). **Treat "correct the invoice afterwards"
+  as the second half of the penny-adjustment procedure**, and remember the
+  allowances drift with the price, not just the price itself.
 - **Any partner, missing pack/line data on an 856:** check *how the order was
   shipped in NAV* before treating it as a mapping defect. NAV sources the
   `<Pack>` and `<ItemLevel>` blocks from a **warehouse shipment's package

@@ -71,14 +71,18 @@ Newest first.
   internally consistent with the understated figures, so the invoice footed
   correctly and would not have been rejected — Renin would simply have
   under-billed by $0.18.
-- **Upstream root cause:** confirmed with high confidence. A **penny
-  adjustment was applied to SO1327572 during troubleshooting** of the NAV G/L
-  inconsistency that blocked warehouse shipment WSH219483 (see
+- **Upstream root cause:** confirmed. A **penny adjustment was applied to
+  SO1327572** while clearing the NAV G/L inconsistency that blocked warehouse
+  shipment WSH219483 (see
   [856 Case 01](home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28)
-  and `gaps.md`). That adjustment moved the sales line price off the PO price,
-  and the invoice inherited it. The wider lesson: **a penny adjustment used to
-  clear a posting error silently corrupts the invoiced price**, and the
-  resulting invoice gives no signal that anything is wrong.
+  and `gaps.md`). Per the user this is the only way to resolve that error in
+  NAV, so the adjustment was deliberate and its price side effect is expected
+  — this case is the *downstream correction*, not a mistake being cleaned up.
+  The wider lesson is procedural: **correcting the invoice back to the PO is
+  the second half of the penny-adjustment procedure.** Note it is not only
+  `UnitPrice` that moves — every percentage-based allowance is recomputed off
+  the adjusted extended total and drifts with it, and the invoice still foots
+  perfectly, so nothing signals that a correction is due.
 - **Fix (applied in _v2):** all values taken from the 850.
   - `InvoiceLine/UnitPrice`: `104.99` → `105.02`
   - `InvoiceLine/ExtendedItemTotal`: `629.94` → `630.12` (6 × 105.02)
