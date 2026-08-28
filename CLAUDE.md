@@ -8,6 +8,11 @@ corrected, one failure at a time. Follow this exact process every time.
 1. **User provides the failure.** In chat, the user pastes the EDI error
    message and places the source file in this folder. That file is the
    "source file" — the original, broken document as it came from the system.
+   The user always drops source/reference files into the **main checkout**
+   (the project root, not any `.claude/worktrees/...` subfolder), even when
+   the active session is working inside a worktree — if you're in a
+   worktree, copy the file(s) in from the main checkout path before doing
+   anything else.
 2. **Check for a matching case first.** Before diagnosing from scratch, check
    `SKILL.md`'s Quick index (and the relevant `cases/<slug>-<doctype>.md`
    file) for a case on the same customer + document type + error type, or

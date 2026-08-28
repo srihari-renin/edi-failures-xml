@@ -84,6 +84,13 @@ Partner notes section.
   invoice to that address until caught. This was the root cause of
   Home Hardware Case 01 (store `5233-2`, Glenboro MB) and is likely to recur
   whenever a new ship-to is added for any customer, not just Home Hardware.
+- **`CarrierProNumber` format `TST-CF 701 ######` → carrier is TST Overland
+  Express** (`CarrierAlphaCode` `OVLD`, `CarrierRouting` `TST Overland
+  Express`). Confirmed on two different customers with this exact pro-number
+  prefix (Canac reference invoice PSI1310799, and Home Hardware Colonial
+  Case 02). Still confirm against the BOL/carrier record or the user when
+  possible — this is a strong pattern match, not a guarantee for every
+  shipment.
 
 ## Quick index
 
@@ -92,6 +99,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |
 | 01 | True Value | 856 | `missing-segment` | resolved | [cases/true-value-856.md](cases/true-value-856.md#case-01--856--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 810 | `missing-segment` | resolved | [cases/do-it-best-hardware-810.md](cases/do-it-best-hardware-810.md#case-01--810--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 856 | `missing-segment` | resolved | [cases/do-it-best-hardware-856.md](cases/do-it-best-hardware-856.md#case-01--856--missing-segment--2026-08-26) |

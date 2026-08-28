@@ -14,10 +14,34 @@ file — see `cases/README.md`.
   deliberately left the original discount amount untouched rather than
   guess. Treat discount basis as per-store until confirmed on a second store
   with nonzero tax. — [Case 01](#case-01--810--tax-missing--2026-08-20)
+- **Carrier placeholder values:** this ERP can ship `CarrierAlphaCode` = `TBD`
+  and `CarrierRouting` = `DO NOT USE TO BE DETERMINED - PLEASE UPDATE`
+  instead of leaving the fields blank when the carrier wasn't resolved at
+  invoice time — check for this literal placeholder text, not just for
+  absent elements, when triaging a carrier-related rejection for this
+  customer. — [Case 02](#case-02--810--invalid-code--2026-08-28)
 
 ## Cases
 
 Newest first.
+
+### Case 02 — 810 — invalid-code — 2026-08-28
+- **Document type:** 810
+- **Error type:** `invalid-code`
+- **Reported by:** Sri Hari, in chat — "This one is also missing the carrier. Here it is TST is the carrier."
+- **Error message:** not a portal rejection text this time — `CarrierAlphaCode`/`CarrierRouting` were present but held literal placeholder values, not blank/absent, so this wasn't a schema-level missing-segment failure.
+- **Source file:** `4087032_Home Hardware Colonial 810.xml` (invoice PSI1301507, PO 17676, BOL SS1309051) — untouched
+- **Reference file:** `4119616_Canac 810 - Reference.xml` (different customer, invoice PSI1310799) — used only to confirm the `OVLD` / `TST Overland Express` mapping for the `TST-CF 701 ######` pro-number format; not a Home Hardware Colonial document
+- **Reference ID:** invoice PSI1301507, PO 17676, BOL SS1309051
+- **Document defect:** `InvoiceHeader/CarrierAlphaCode` = `TBD` and `InvoiceHeader/CarrierRouting` = `DO NOT USE TO BE DETERMINED - PLEASE UPDATE` — explicit unresolved placeholder values shipped to the partner instead of real carrier data.
+- **Upstream root cause:** unconfirmed — ERP/shipping record for this shipment had no carrier resolved at invoice time, so a template placeholder went out instead.
+- **Fix (applied in _v2):**
+  - `CarrierAlphaCode`: `TBD` → `OVLD`
+  - `CarrierRouting`: `DO NOT USE TO BE DETERMINED - PLEASE UPDATE` → `TST Overland Express`
+  - Carrier identified as TST by the user; `OVLD` / `TST Overland Express` used based on this invoice's `CarrierProNumber` (`TST-CF 701 2714247`) matching the exact same `TST-CF 701 ######` pro-number format as the already-confirmed Canac reference invoice PSI1310799 (`TST-CF 701 2738425` → `OVLD` / `TST Overland Express`) — not inferred from the reference alone, corroborated by the user's carrier confirmation.
+  - Nothing else changed.
+- **Files:** `Resolved/4087032_Home Hardware Colonial 810.xml` → `Resolved/4087032_Home Hardware Colonial 810_v2.xml`
+- **Status:** resolved. Corrected invoice sent to Home Hardware, confirmed by the user 2026-08-28. Files moved to `Resolved/`.
 
 <!--
 Entry template — copy this block for every new case AND every new version:
