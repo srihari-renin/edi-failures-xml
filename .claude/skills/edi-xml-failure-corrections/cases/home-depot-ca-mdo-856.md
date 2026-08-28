@@ -78,14 +78,14 @@ Newest first.
   cannot be completed because it will cause inconsistencies in the G/L Entry
   table. Check where and how the CONSISTENT function is used in the
   transaction to find the reason for the error."*
-- **Source file:** `4160649_Home Depot.CA MDO 856.xml` (shipment SS1329633,
+- **Source file:** `Resolved/4160649_Home Depot.CA MDO 856.xml` (shipment SS1329633,
   invoice PSI1321830, PO 538506961, SO1327572, ship-to DFC Bolton - 7340) —
   untouched
-- **Reference files:** `4160057_Home Depot.CA MDO 856.xml` (SS1329635 — the
+- **Reference files:** `Resolved/4160057_Home Depot.CA MDO 856.xml` (SS1329635 — the
   primary known-good, a 2-unit shipment from the same day),
-  `4050970_Home Depot.CA MDO 856.xml` (SS1299095 — 1-unit),
-  `4050986_Home Depot.CA MDO 810.xml` (the 810 paired with SS1299095),
-  `4157486_Home Depot.CA MDO 850.xml` (PO 538506961 — the inbound PO for this
+  `Resolved/4050970_Home Depot.CA MDO 856.xml` (SS1299095 — 1-unit),
+  `Resolved/4050986_Home Depot.CA MDO 810.xml` (the 810 paired with SS1299095),
+  `Resolved/4157486_Home Depot.CA MDO 850.xml` (PO 538506961 — the inbound PO for this
   very order, matched via `PurchaseOrderNumber`)
 - **Reference ID:** shipment SS1329633, invoice PSI1321830, PO 538506961
 - **Document defect:** 15 defects in three groups.
@@ -112,7 +112,7 @@ Newest first.
   inconsistency on SO1327572 was **not** traced — see `gaps.md`.
 - **Fix (applied in _v2):** values recovered from package PK930291 and the
   WSH219483 Shipping FastTab (captured before deletion, see
-  `WSH219483-package-capture.md`), from the 850, and from the NAV item card.
+  `Resolved/WSH219483-package-capture.md`), from the 850, and from the NAV item card.
   - Added the full `<ItemLevel>` block: `LineSequenceNumber` `10`,
     `BuyerPartNumber` `1000127692`, `VendorPartNumber` `BY0120BWCLJ036080`,
     `ConsumerPackageCode` `043044995468`, `PartDescription1`
@@ -138,6 +138,7 @@ Newest first.
   630.12, against which the 850's own allowances reconcile exactly
   (`I170` @ 0.25% = 1.58 ✔, `C300` @ 1.25% = 7.88 ✔), confirming both price
   and quantity. The 850's `TotalLineItemNumber` `1` confirms `TotalLineItems`.
-- **Files:** `4160649_Home Depot.CA MDO 856.xml` →
-  `4160649_Home Depot.CA MDO 856_v2.xml`
-- **Status:** corrected, awaiting send to Home Depot and partner confirmation.
+- **Files:** `Resolved/4160649_Home Depot.CA MDO 856.xml` →
+  `Resolved/4160649_Home Depot.CA MDO 856_v2.xml`
+- **Status:** resolved. `_v2` sent to Home Depot and accepted, confirmed by the
+  user 2026-08-28. Files moved to `Resolved/`.

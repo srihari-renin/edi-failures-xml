@@ -122,8 +122,8 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
-| 01 | Home Depot.CA MDO | 810 | `price-mismatch` | corrected, awaiting confirmation | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
-| 01 | Home Depot.CA MDO | 856 | `missing-segment` | corrected, awaiting confirmation | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
+| 01 | Home Depot.CA MDO | 810 | `price-mismatch` | resolved | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
+| 01 | Home Depot.CA MDO | 856 | `missing-segment` | resolved | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
 | 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |
 | 01 | True Value | 856 | `missing-segment` | resolved | [cases/true-value-856.md](cases/true-value-856.md#case-01--856--missing-segment--2026-08-26) |
 | 01 | Do It Best Hardware | 810 | `missing-segment` | resolved | [cases/do-it-best-hardware-810.md](cases/do-it-best-hardware-810.md#case-01--810--missing-segment--2026-08-26) |

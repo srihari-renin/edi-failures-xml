@@ -55,12 +55,12 @@ Newest first.
   the invoice paired with the ASN rebuilt in
   [856 Case 01](home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28).
 - **Error message:** n/a — no rejection. The invoice validates cleanly.
-- **Source file:** `4160650_Home Depot.CA MDO 810.xml` (invoice PSI1321830,
+- **Source file:** `Resolved/4160650_Home Depot.CA MDO 810.xml` (invoice PSI1321830,
   PO 538506961, SO1327572, shipment SS1329633, ship-to DFC Bolton - 7340) —
   untouched
-- **Reference files:** `4157486_Home Depot.CA MDO 850.xml` (PO 538506961 — the
+- **Reference files:** `Resolved/4157486_Home Depot.CA MDO 850.xml` (PO 538506961 — the
   paired PO, matched via `PurchaseOrderNumber`; authoritative on price),
-  `4050986_Home Depot.CA MDO 810.xml` (invoice PSI1291553 — known-good, used
+  `Resolved/4050986_Home Depot.CA MDO 810.xml` (invoice PSI1291553 — known-good, used
   to verify the tax/total/terms formulas)
 - **Reference ID:** invoice PSI1321830, PO 538506961
 - **Document defect:** `UnitPrice` was `104.99` against the PO's `105.02` — 3
@@ -115,6 +115,7 @@ Newest first.
   total re-derives from the corrected figures: 105.02 × 6 = 630.12 =
   `ExtendedItemTotal` = `TotalNetSalesAmount`; base 620.66; tax 80.69; total
   701.35; terms 14.22. `UnitPrice`, `I170` and `C300` all match the 850.
-- **Files:** `4160650_Home Depot.CA MDO 810.xml` →
-  `4160650_Home Depot.CA MDO 810_v2.xml`
-- **Status:** corrected, awaiting send to Home Depot and partner confirmation.
+- **Files:** `Resolved/4160650_Home Depot.CA MDO 810.xml` →
+  `Resolved/4160650_Home Depot.CA MDO 810_v2.xml`
+- **Status:** resolved. `_v2` sent to Home Depot and accepted, confirmed by the
+  user 2026-08-28. Files moved to `Resolved/`.
