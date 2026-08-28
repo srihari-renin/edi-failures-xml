@@ -1,0 +1,195 @@
+<AdvanceShipNotices>
+  <AdvanceShipNotice>
+    <Header>
+      <ShipmentHeader>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HS</RecordType>
+        <ShipmentDate>20260828</ShipmentDate>
+        <Vendor>70001340</Vendor>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <ShipNoticeDate>20260828</ShipNoticeDate>
+        <ShipNoticeTime>1010</ShipNoticeTime>
+        <ASNStructureCode>0001</ASNStructureCode>
+        <ShipmentLadingQuantity>1</ShipmentLadingQuantity>
+        <ShipmentWeight>132.00</ShipmentWeight>
+        <ShipmentWeightUOM>LB</ShipmentWeightUOM>
+        <CarrierAlphaCode>ROF</CarrierAlphaCode>
+        <CarrierTransMethodCode>M</CarrierTransMethodCode>
+        <CarrierRouting>Retailer owned/operated fleet</CarrierRouting>
+        <BillOfLadingNumber>WSH219461</BillOfLadingNumber>
+        <CarrierProNumber>MDO ID6100977518</CarrierProNumber>
+        <FOBPayCode>CC</FOBPayCode>
+        <CurrentScheduledDeliveryDate>20260830</CurrentScheduledDeliveryDate>
+        <CurrentScheduledShipDate>20260828</CurrentScheduledShipDate>
+      </ShipmentHeader>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>MR</ReferenceQual>
+        <ReferenceID>X2C</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>X9</ReferenceQual>
+        <ReferenceID>3787604347</ReferenceID>
+      </Reference>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>93</LocationCodeQualifier>
+        <AddressLocationNumber>7340</AddressLocationNumber>
+        <AddressName>DFC Bolton - 7340</AddressName>
+        <Address1>100 Pillsworth Road</Address1>
+        <City>Caledon</City>
+        <State>ON</State>
+        <PostalCode>L7E 4G8</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>C00000368</AddressLocationNumber>
+        <AddressName>HOME DEPOT.CA (MDO)</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+      </Address>
+    </Header>
+    <OrderLevel>
+      <OrderHeader>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1329635</ShipmentIdentification>
+        <RecordType>HO</RecordType>
+        <OrderNumber>SO1325279</OrderNumber>
+        <InvoiceNumber>PSI1321832</InvoiceNumber>
+        <InvoiceDate>20260828</InvoiceDate>
+        <PurchaseOrderNumber>538377552</PurchaseOrderNumber>
+        <PurchaseOrderDate>20260819</PurchaseOrderDate>
+        <OrderQtyPackingCode>CTN</OrderQtyPackingCode>
+        <OrderLadingQuantity>1</OrderLadingQuantity>
+        <OrderWeight>132.00</OrderWeight>
+        <OrderWeightUOM>LB</OrderWeightUOM>
+        <Vendor>70001340</Vendor>
+        <CustomerOrderNumber>0242815888</CustomerOrderNumber>
+        <OrderStatusCode>CC</OrderStatusCode>
+        <DeliveryDate>20260830</DeliveryDate>
+      </OrderHeader>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1329635</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackSize>2.00</PackSize>
+          <PackUOM>EA</PackUOM>
+          <PackWeight>132.00</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <PackLength>40.00</PackLength>
+          <PackWidth>32.00</PackWidth>
+          <PackHeight>96.00</PackHeight>
+          <PackagingDescriptionCode>1</PackagingDescriptionCode>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00100430440009297669</MarksAndNumbers1>
+          <MarksAndNumbersQualifier2>SM</MarksAndNumbersQualifier2>
+          <MarksAndNumbers2>PK929766</MarksAndNumbers2>
+        </Pack>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1329635</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>10</LineSequenceNumber>
+              <BuyerPartNumber>1001806242</BuyerPartNumber>
+              <VendorPartNumber>BY0100BWWTC048096</VendorPartNumber>
+              <ConsumerPackageCode>043044930827</ConsumerPackageCode>
+              <PartDescription1>100-4896-WT.E FLUSH PANEL DOOR</PartDescription1>
+              <OrderQty>2</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>161.99</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <PackUOM>EA</PackUOM>
+              <InnerPack>1</InnerPack>
+              <ShipQty>2.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+    </OrderLevel>
+    <Summary>
+      <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+      <ShipmentIdentification>SS1329635</ShipmentIdentification>
+      <RecordType>ST</RecordType>
+      <TotalLineItems>1</TotalLineItems>
+    </Summary>
+  </AdvanceShipNotice>
+</AdvanceShipNotices>
