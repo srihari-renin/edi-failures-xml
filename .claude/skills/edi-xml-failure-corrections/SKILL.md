@@ -84,6 +84,16 @@ Partner notes section.
   invoice to that address until caught. This was the root cause of
   Home Hardware Case 01 (store `5233-2`, Glenboro MB) and is likely to recur
   whenever a new ship-to is added for any customer, not just Home Hardware.
+- **Any partner: a "penny adjustment" used to clear a NAV posting error
+  corrupts the invoiced price.** Nudging a sales line's price to force a
+  stuck document through moves it off the PO price, and the resulting 810
+  inherits it — with every total, tax and allowance recomputed consistently
+  around the *wrong* figure, so the invoice foots correctly and passes
+  validation. Nothing signals the defect; it is only visible by comparing the
+  810 to its 850. Confirmed on Home Depot.CA MDO 810 Case 01 (3 cents/unit,
+  $0.18 under-billed). **Whenever an order's history includes a manual price
+  nudge, diff the invoice against the PO before sending**, and expect the
+  allowances to have drifted with it.
 - **Any partner, missing pack/line data on an 856:** check *how the order was
   shipped in NAV* before treating it as a mapping defect. NAV sources the
   `<Pack>` and `<ItemLevel>` blocks from a **warehouse shipment's package
@@ -110,6 +120,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Depot.CA MDO | 810 | `price-mismatch` | corrected, awaiting confirmation | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
 | 01 | Home Depot.CA MDO | 856 | `missing-segment` | corrected, awaiting confirmation | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
 | 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |
 | 01 | True Value | 856 | `missing-segment` | resolved | [cases/true-value-856.md](cases/true-value-856.md#case-01--856--missing-segment--2026-08-26) |
