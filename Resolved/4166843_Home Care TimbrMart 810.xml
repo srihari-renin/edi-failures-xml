@@ -1,0 +1,206 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260903</InvoiceDate>
+        <PurchaseOrderDate>20260819</PurchaseOrderDate>
+        <PurchaseOrderNumber>19711</PurchaseOrderNumber>
+        <InvoiceTypeCode>10</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>13850</Vendor>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>OVLD</CarrierAlphaCode>
+        <CarrierRouting>TST Overland Express</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>TST-CF 701 2561580</CarrierProNumber>
+        <BillOfLadingNumber>SS1331495</BillOfLadingNumber>
+        <ShipDate>20260902</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20261030</TermsDiscountDate>
+        <TermsDiscountDueDays>57</TermsDiscountDueDays>
+        <TermsNetDueDate>20261030</TermsNetDueDate>
+        <TermsNetDueDays>57</TermsNetDueDays>
+        <TermsDiscountAmount>7.95</TermsDiscountAmount>
+        <TermsDescription>2%30THMF</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>8262</AddressLocationNumber>
+        <AddressName>YVON DUCHESNE &amp; FILS INC</AddressName>
+        <Address1>844, ST-EDOUARD CP130</Address1>
+        <City>ST. URBAIN DE CHARLEVOIX</City>
+        <State>QC</State>
+        <PostalCode>G0A 4K0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>TIM-BR-MART LTD.</AddressName>
+        <Address1>1120 - 68th Avenue NE</Address1>
+        <City>CALGARY</City>
+        <State>AB</State>
+        <PostalCode>T2E 8S5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>TIM-BR-MART LTD.</AddressName>
+        <Address1>1120 - 68th Avenue NE</Address1>
+        <City>CALGARY</City>
+        <State>AB</State>
+        <PostalCode>T2E 8S5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>TIM-BR-MART LTD.</AddressName>
+        <Address1>1120 - 68th Avenue NE</Address1>
+        <City>CALGARY</City>
+        <State>AB</State>
+        <PostalCode>T2E 8S5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1325298</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1331495</ReferenceID>
+      </Reference>
+      <ChargesAllowances>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>C</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>150.00</AllowChrgAmt>
+        <AllowChrgHandlingCode>06</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>Freight</AllowChrgHandlingDescription>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1323681</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>RDE38-33</VendorPartNumber>
+          <ConsumerPackageCode>065375009034</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>RANCH PINE DOOR 1 3/8" X 33 x 84"</PartDescription1>
+          <OrderQty>1.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>247.42</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>247.42</ExtendedItemTotal>
+          <ProductProcessDescription>045</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>GS</TaxTypeCode>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxPercent>0.00</TaxPercent>
+        <TaxID>1225162693TQ0001</TaxID>
+      </Tax>
+      <Tax>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>PS</TaxTypeCode>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxPercent>0.00</TaxPercent>
+        <TaxID>1225162693TQ0001</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>5V9ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1323681</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>397.42</TotalAmount>
+        <TotalNetSalesAmount>247.42</TotalNetSalesAmount>
+        <TotalQtyInvoiced>1.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

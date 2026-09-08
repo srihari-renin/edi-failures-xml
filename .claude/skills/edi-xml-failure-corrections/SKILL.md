@@ -9,21 +9,35 @@ Skill **package** — not a single file. This file is the router: workflow,
 matching rules, error-type vocabulary, cross-cutting notes, and a quick index.
 It must stay small. Full case history lives one file per customer under
 `cases/`, loaded only when that customer is in play. See `cases/README.md`
-for the package layout and sharding rule.
+for the package layout and sharding rule, and
+`references/git-and-tracking.md` for the branching / PR / worktree sequence
+and the project-root tracking files.
 
-## Workflow (see the folder's `CLAUDE.md` for the authoritative process)
+This skill is the authoritative process for EDI failure work in this folder —
+the project `CLAUDE.md` points here rather than restating it, so there is one
+home for each rule.
 
-1. User pastes the error message or partner email in chat and places the source
-   file in the folder. That file is the "before" record — never edited.
-2. Identify the failing file by invoice / PO / document number, and identify a
-   **reference file**: a known-good document from the same customer and document
-   type, ideally with the same distinguishing attribute (same province/state,
-   same terms, same item type). Diff the two before theorising.
-3. Diagnose against the source and reference together with the user. Separate
-   the **document defect** (what is wrong in this XML) from the **upstream root
-   cause** (what in the ERP produced it). Fixing the XML resends this one
-   document; only the upstream fix stops it recurring.
-4. Once the fix is agreed, create `<original>_v2.<ext>` in the same folder. If a
+## Workflow
+
+1. **Get the source file in front of you.** The user pastes the error message or
+   partner email in chat and drops the source file into the **main checkout**
+   (the project root) — they do this even when the active session is working
+   inside a `.claude/worktrees/...` worktree, so if you're in a worktree, copy
+   the file in from the main checkout path before doing anything else. That
+   file is the "before" record — never edited.
+2. **Match against past cases before diagnosing anything.** Customer + document
+   type + error type first, then document type + error type across customers —
+   see *How to match a new failure to a past case* below. A prior case is a
+   starting point, not just background: if one matches, work from its fix.
+3. **Triage the shape of the fix** — this decides how you proceed, and getting
+   it wrong is the most expensive mistake available here. See *Triage* below.
+4. **For recalculation / structural fixes, get a reference document before you
+   ask the user to decide anything.** See *Reference-first* below.
+5. Diagnose against the source and the reference together with the user.
+   Separate the **document defect** (what is wrong in this XML) from the
+   **upstream root cause** (what in the ERP produced it). Fixing the XML
+   resends this one document; only the upstream fix stops it recurring.
+6. Once the fix is agreed, create `<original>_v2.<ext>` in the same folder. If a
    v2 does not resolve it, create `_v3`, `_v4` — never edit a prior version.
    **Fix only the defect the error names or that the diagnosis actually
    evidences.** A reference file is for *diagnosis* — spotting what's wrong and
@@ -35,11 +49,74 @@ for the package layout and sharding rule.
    case entry rather than changing it — let the customer's complaint or a
    second confirmed data point drive that fix, not inference from one other
    document.
-5. Append the case to `cases/<customer-slug>-<doctype>.md` (create the file
+7. Append the case to `cases/<customer-slug>-<doctype>.md` (create the file
    from the template there if this customer+doc-type combination has no
    cases yet), then add one row to the **Quick index** below. Every version
    gets its own entry, including failed attempts. Never write full case
    detail into this file.
+8. **Branch, commit, PR, track, and clean up** — see
+   `references/git-and-tracking.md`. It covers the branching convention, the
+   PR-and-worktree-cleanup sequence, the three project-root tracking files
+   (`task-list.md`, `gaps.md`, `open-questions.md`), and when a case's files
+   move into `Resolved/`.
+
+### Triage: substitution, or recalculation?
+
+The error type does *not* decide this — the **shape of the fix** does. The same
+`tax-missing` error is a substitution when the user hands you the amount and a
+recalculation when you have to derive it.
+
+- **Substitution** — the fix replaces a literal value with the correct one.
+  No arithmetic, and no other field has to move as a consequence: a carrier
+  code, a placeholder string, an address, a qualifier code. Propose the
+  correction with your reasoning and implement it once the user agrees. This
+  is a proposal to confirm, not a decision to adjudicate — don't spend a
+  weigh-the-options question on a field with one plausible value.
+- **Recalculation or structural** — the fix computes a number, or changing one
+  field forces others to move (tax → total → discount), or a record/segment is
+  added or removed. Go to *Reference-first* before asking the user anything
+  substantive.
+
+Why the split matters: under a substitution there is one defensible answer, so
+asking the user to choose wastes their time. Under a recalculation there are
+usually several defensible arithmetics — which base, which rounding, whether a
+charge is inside the tax base — and choosing between them from first principles
+is guessing dressed up as reasoning. A known-good document from the same partner
+turns that guess into an observed fact, so it is worth one round-trip to get one.
+
+### Reference-first
+
+For recalculation and structural fixes, in this order:
+
+1. **Work out what would actually settle it.** Name the distinguishing
+   attributes concretely — not "a similar invoice" but "same customer, same
+   document type, ship-to in the same tax jurisdiction, and a freight charge on
+   the document". You can only ask a useful question once you know what the
+   reference has to contain.
+2. **Search what the project already holds** before asking: the working folder,
+   `Resolved/`, and the **`Reference file:` and `Files:` lines of past case
+   entries** — those are effectively an index of every known-good document this
+   project has accumulated.
+3. **Ask the user, informed — never cold.** State what you found, what it fails
+   to cover, and exactly what you need. For example: *"Closest I have is Canac
+   PSI1310799 — Quebec, taxed, same ERP, but no freight line and a different
+   partner's mapping. Do you have a TimbrMart invoice to a QC dealer with a
+   freight charge on it?"* Asking cold risks them handing back a document you
+   already had, or one that misses the attribute that mattered.
+4. **If they supply one**, use it for every field it genuinely settles and raise
+   a decision question only for the gap. A partial match is still evidence — a
+   reference that covers the tax rate but not the freight treatment has done
+   real work. Record in the case entry which fields the reference settled and
+   which you inferred, so a future reader can tell the difference.
+5. **If they say they have none**, say so plainly, then run your own diagnosis
+   and ask the direct decision questions using the decision-question format in
+   the user's global `CLAUDE.md`.
+
+**Boundary with step 6.** A reference settles how a field is *derived* — rate,
+basis, sign, code, which records exist — for the fields the error implicates. It
+is never authority to change a field the error doesn't implicate. Home Hardware
+Case 01 is the precedent: the reference settled the 5% tax rate and was
+explicitly refused as authority over `TermsDiscountAmount` on a different store.
 
 ## How to match a new failure to a past case
 
@@ -71,6 +148,32 @@ nothing fits, and add it to this list in the same edit.
 | `price-mismatch` | Unit or extended price disagrees with the PO |
 | `duplicate-document` | Same document number transmitted more than once |
 | `credit-sign-convention` | Credit memo (`InvoiceTypeCode=CR`) rejected/mis-posted because a field's sign didn't match the partner's expected convention for credits (e.g. tax sign, price sign) |
+
+## Rules
+
+Non-negotiables. Everything else in this file is judgement; these are not.
+
+- **Originals are never modified or deleted.** The file the user drops in is
+  the permanent record of what the failure looked like. If a fix doesn't
+  resolve the error, keep incrementing — `_v2`, `_v3`, `_v4` — in the same
+  folder, never editing a prior version. Each attempt is its own file until
+  the error is actually resolved. Moving a file into `Resolved/` is not
+  editing; changing its bytes is.
+- **Correction naming is always the `_v2` suffix**, same folder as the
+  original, same extension. No other pattern.
+- **Never commit case work directly to `master`.** It's the backup and restore
+  point for this project; it should only ever hold resolved or explicitly
+  logged state. Branch first — see `references/git-and-tracking.md`.
+- **One skill only: `edi-xml-failure-corrections`.** Every corrected failure
+  adds a case to it. Don't create a separate skill per error type or partner —
+  the accumulated cross-partner pattern matching is the entire value here.
+- **Every version gets its own case entry**, not just the first attempt —
+  including what was tried, whether it worked, and if not, why. Failed
+  attempts are as useful to a future lookup as successful ones, sometimes more.
+- **Logging a case is not a decision to check in on.** Do it automatically
+  every time a fix — or a "no fix needed" outcome — is reached, and add the
+  Quick index row in the same edit. A case recorded in only one of the two
+  places is effectively lost.
 
 ## General notes
 
@@ -107,6 +210,25 @@ Partner notes section.
   warehouse shipment has to be abandoned, capture its package records **and**
   its Shipping FastTab (carrier, tracking/PRO number, seal, total weight)
   before deleting it — that data is unrecoverable afterwards.
+- **Any partner: an early-payment discount basis is per-partner — confirm it,
+  never carry it across.** `TermsDiscountAmount` is 2% of the **tax-inclusive**
+  total for Canac (PSI1310799: 2% × 2039.92 = 40.80) and 2% of the **pre-tax**
+  total for Home Care TimbrMart (PSI1247205: 2% × 416.38 = 8.33, where
+  tax-inclusive would have been 9.57). Two partners, same ERP, opposite bases.
+  Home Hardware Case 01 declined to generalise this field from a single other
+  invoice and was right to — treat the basis as unknown until you have a
+  confirmed document from *that* partner. Practical upshot on a `tax-missing`
+  failure: if the partner's basis is pre-tax, `TermsDiscountAmount` is usually
+  already correct on the failing invoice, because it never depended on the tax.
+- **Any partner: a freight charge is inside the tax base.** A header
+  `ChargesAllowances` with `AllowChrgIndicator` = **`C`** (a charge, not the
+  far more common `A` allowance) and `AllowChrgCode` `D240` is taxable — tax
+  base = `TotalNetSalesAmount` + the charge, and `TotalAmount` = that base +
+  tax. Confirmed to the cent on Home Care TimbrMart PSI1247205. This mirrors
+  how allowances behave everywhere else in the project (they reduce the base
+  *and* the total), and matches Canadian GST/QST treatment of vendor-charged
+  freight on a taxable supply. Watch for it: charges are rare here — nearly
+  every `ChargesAllowances` record in the project is an `A`.
 - **`CarrierProNumber` format `TST-CF 701 ######` → carrier is TST Overland
   Express** (`CarrierAlphaCode` `OVLD`, `CarrierRouting` `TST Overland
   Express`). Confirmed on two different customers with this exact pro-number
@@ -122,6 +244,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Care TimbrMart | 810 | `tax-missing` | resolved | [cases/home-care-timbrmart-810.md](cases/home-care-timbrmart-810.md#case-01--810--tax-missing--2026-09-08) |
 | 01 | Home Depot.CA MDO | 810 | `price-mismatch` | resolved | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
 | 01 | Home Depot.CA MDO | 856 | `missing-segment` | resolved | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
 | 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |

@@ -23,4 +23,19 @@ _(Empty — fills in as questions come up.)_
 
 ## Answered
 
-_(Empty.)_
+### TimbrMart PSI1323681 (810, `tax-missing`) — all four questions settled 2026-09-08
+Reference invoice **PSI1247205** (`3892509_Home Care TimbrMart 810 - Reference.xml`) — same
+customer, same doc type, QC ship-to, same $150.00 `D240` freight charge — answered every one
+to the cent, so none needed adjudicating:
+- **QC-with-freight reference exists?** Yes; Sri Hari supplied it.
+- **Freight inside the tax base?** Yes. Base = net + charge (266.38 + 150.00 = 416.38 gives the
+  issued GST 20.82 / QST 41.53 / total 478.73; net alone gives 13.32 / 26.57).
+- **Recompute `TermsDiscountAmount`?** No — TimbrMart's basis is the **pre-tax** total
+  (2% × 416.38 = 8.33 as issued; tax-inclusive would be 9.57). The failing invoice's 7.95 was
+  already correct. Note this is the *opposite* of Canac; logged as a General note in `SKILL.md`.
+- **Is `PS` the right QST code?** Yes — TimbrMart's own accepted invoice carries `PS`. Canac's
+  `SP` is a different partner's mapping and was a red herring.
+
+Still open, but not a question for this case log: the **NAV root cause on ship-to 8262** and the
+blast-radius check for other Quebec ship-tos. Tracked on the case entry.
+
