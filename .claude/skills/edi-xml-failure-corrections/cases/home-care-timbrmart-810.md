@@ -83,5 +83,5 @@ Entry template — copy this block for every new case AND every new version:
   - **`TermsDiscountAmount` left at 7.95 — verified correct, not merely left alone.** 2% × pre-tax 397.42 = 7.95, which is the basis the reference confirms. It never depended on the tax, so the missing tax did not corrupt it.
   - **`TaxID`, `TaxTypeCode`, `TotalNetSalesAmount`, `TotalWeight` all unchanged** — each confirmed correct against the reference rather than assumed.
   - Nothing else changed; the diff is five lines.
-- **Files:** `4166843_Home Care TimbrMart 810.xml` → `4166843_Home Care TimbrMart 810_v2.xml`; reference `3892509_Home Care TimbrMart 810 - Reference.xml`
-- **Status:** corrected, awaiting resend to TIM-BR-MART and partner confirmation. Upstream NAV check on ship-to 8262 still open.
+- **Files:** `Resolved/4166843_Home Care TimbrMart 810.xml` → `Resolved/4166843_Home Care TimbrMart 810_v2.xml` (moved to `Resolved/` once the corrected invoice was confirmed sent); reference `Resolved/3892509_Home Care TimbrMart 810 - Reference.xml` moved alongside it
+- **Status:** resolved. Corrected invoice sent to TIM-BR-MART, confirmed by the user 2026-09-08. **Upstream NAV check on ship-to 8262 (Tax Area Code / Tax Liable) and the blast-radius check on other Quebec ship-tos remain open** — the document is fixed, the cause is not, so a repeat on the next order to this dealer is still possible.
