@@ -15,15 +15,19 @@ for the package layout and sharding rule.
 
 1. User pastes the error message or partner email in chat and places the source
    file in the folder. That file is the "before" record — never edited.
-2. Identify the failing file by invoice / PO / document number, and identify a
-   **reference file**: a known-good document from the same customer and document
-   type, ideally with the same distinguishing attribute (same province/state,
-   same terms, same item type). Diff the two before theorising.
-3. Diagnose against the source and reference together with the user. Separate
-   the **document defect** (what is wrong in this XML) from the **upstream root
-   cause** (what in the ERP produced it). Fixing the XML resends this one
-   document; only the upstream fix stops it recurring.
-4. Once the fix is agreed, create `<original>_v2.<ext>` in the same folder. If a
+2. **Match against past cases before diagnosing anything.** Customer + document
+   type + error type first, then document type + error type across customers —
+   see *How to match a new failure to a past case* below. A prior case is a
+   starting point, not just background: if one matches, work from its fix.
+3. **Triage the shape of the fix** — this decides how you proceed, and getting
+   it wrong is the most expensive mistake available here. See *Triage* below.
+4. **For recalculation / structural fixes, get a reference document before you
+   ask the user to decide anything.** See *Reference-first* below.
+5. Diagnose against the source and the reference together with the user.
+   Separate the **document defect** (what is wrong in this XML) from the
+   **upstream root cause** (what in the ERP produced it). Fixing the XML
+   resends this one document; only the upstream fix stops it recurring.
+6. Once the fix is agreed, create `<original>_v2.<ext>` in the same folder. If a
    v2 does not resolve it, create `_v3`, `_v4` — never edit a prior version.
    **Fix only the defect the error names or that the diagnosis actually
    evidences.** A reference file is for *diagnosis* — spotting what's wrong and
@@ -35,11 +39,68 @@ for the package layout and sharding rule.
    case entry rather than changing it — let the customer's complaint or a
    second confirmed data point drive that fix, not inference from one other
    document.
-5. Append the case to `cases/<customer-slug>-<doctype>.md` (create the file
+7. Append the case to `cases/<customer-slug>-<doctype>.md` (create the file
    from the template there if this customer+doc-type combination has no
    cases yet), then add one row to the **Quick index** below. Every version
    gets its own entry, including failed attempts. Never write full case
    detail into this file.
+
+### Triage: substitution, or recalculation?
+
+The error type does *not* decide this — the **shape of the fix** does. The same
+`tax-missing` error is a substitution when the user hands you the amount and a
+recalculation when you have to derive it.
+
+- **Substitution** — the fix replaces a literal value with the correct one.
+  No arithmetic, and no other field has to move as a consequence: a carrier
+  code, a placeholder string, an address, a qualifier code. Propose the
+  correction with your reasoning and implement it once the user agrees. This
+  is a proposal to confirm, not a decision to adjudicate — don't spend a
+  weigh-the-options question on a field with one plausible value.
+- **Recalculation or structural** — the fix computes a number, or changing one
+  field forces others to move (tax → total → discount), or a record/segment is
+  added or removed. Go to *Reference-first* before asking the user anything
+  substantive.
+
+Why the split matters: under a substitution there is one defensible answer, so
+asking the user to choose wastes their time. Under a recalculation there are
+usually several defensible arithmetics — which base, which rounding, whether a
+charge is inside the tax base — and choosing between them from first principles
+is guessing dressed up as reasoning. A known-good document from the same partner
+turns that guess into an observed fact, so it is worth one round-trip to get one.
+
+### Reference-first
+
+For recalculation and structural fixes, in this order:
+
+1. **Work out what would actually settle it.** Name the distinguishing
+   attributes concretely — not "a similar invoice" but "same customer, same
+   document type, ship-to in the same tax jurisdiction, and a freight charge on
+   the document". You can only ask a useful question once you know what the
+   reference has to contain.
+2. **Search what the project already holds** before asking: the working folder,
+   `Resolved/`, and the **`Reference file:` and `Files:` lines of past case
+   entries** — those are effectively an index of every known-good document this
+   project has accumulated.
+3. **Ask the user, informed — never cold.** State what you found, what it fails
+   to cover, and exactly what you need. For example: *"Closest I have is Canac
+   PSI1310799 — Quebec, taxed, same ERP, but no freight line and a different
+   partner's mapping. Do you have a TimbrMart invoice to a QC dealer with a
+   freight charge on it?"* Asking cold risks them handing back a document you
+   already had, or one that misses the attribute that mattered.
+4. **If they supply one**, use it for every field it genuinely settles and raise
+   a decision question only for the gap. A partial match is still evidence — a
+   reference that covers the tax rate but not the freight treatment has done
+   real work. Record in the case entry which fields the reference settled and
+   which you inferred, so a future reader can tell the difference.
+5. **If they say they have none**, say so plainly, then run your own diagnosis
+   and ask the direct decision questions using the folder `CLAUDE.md`'s format.
+
+**Boundary with step 6.** A reference settles how a field is *derived* — rate,
+basis, sign, code, which records exist — for the fields the error implicates. It
+is never authority to change a field the error doesn't implicate. Home Hardware
+Case 01 is the precedent: the reference settled the 5% tax rate and was
+explicitly refused as authority over `TermsDiscountAmount` on a different store.
 
 ## How to match a new failure to a past case
 
