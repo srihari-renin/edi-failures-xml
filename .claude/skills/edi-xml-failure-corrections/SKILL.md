@@ -168,6 +168,25 @@ Partner notes section.
   warehouse shipment has to be abandoned, capture its package records **and**
   its Shipping FastTab (carrier, tracking/PRO number, seal, total weight)
   before deleting it — that data is unrecoverable afterwards.
+- **Any partner: an early-payment discount basis is per-partner — confirm it,
+  never carry it across.** `TermsDiscountAmount` is 2% of the **tax-inclusive**
+  total for Canac (PSI1310799: 2% × 2039.92 = 40.80) and 2% of the **pre-tax**
+  total for Home Care TimbrMart (PSI1247205: 2% × 416.38 = 8.33, where
+  tax-inclusive would have been 9.57). Two partners, same ERP, opposite bases.
+  Home Hardware Case 01 declined to generalise this field from a single other
+  invoice and was right to — treat the basis as unknown until you have a
+  confirmed document from *that* partner. Practical upshot on a `tax-missing`
+  failure: if the partner's basis is pre-tax, `TermsDiscountAmount` is usually
+  already correct on the failing invoice, because it never depended on the tax.
+- **Any partner: a freight charge is inside the tax base.** A header
+  `ChargesAllowances` with `AllowChrgIndicator` = **`C`** (a charge, not the
+  far more common `A` allowance) and `AllowChrgCode` `D240` is taxable — tax
+  base = `TotalNetSalesAmount` + the charge, and `TotalAmount` = that base +
+  tax. Confirmed to the cent on Home Care TimbrMart PSI1247205. This mirrors
+  how allowances behave everywhere else in the project (they reduce the base
+  *and* the total), and matches Canadian GST/QST treatment of vendor-charged
+  freight on a taxable supply. Watch for it: charges are rare here — nearly
+  every `ChargesAllowances` record in the project is an `A`.
 - **`CarrierProNumber` format `TST-CF 701 ######` → carrier is TST Overland
   Express** (`CarrierAlphaCode` `OVLD`, `CarrierRouting` `TST Overland
   Express`). Confirmed on two different customers with this exact pro-number
@@ -183,6 +202,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Care TimbrMart | 810 | `tax-missing` | corrected, awaiting confirmation | [cases/home-care-timbrmart-810.md](cases/home-care-timbrmart-810.md#case-01--810--tax-missing--2026-09-08) |
 | 01 | Home Depot.CA MDO | 810 | `price-mismatch` | resolved | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
 | 01 | Home Depot.CA MDO | 856 | `missing-segment` | resolved | [cases/home-depot-ca-mdo-856.md](cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28) |
 | 02 | Home Hardware Colonial | 810 | `invalid-code` | resolved | [cases/home-hardware-colonial-810.md](cases/home-hardware-colonial-810.md#case-02--810--invalid-code--2026-08-28) |
