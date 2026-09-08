@@ -9,12 +9,22 @@ Skill **package** — not a single file. This file is the router: workflow,
 matching rules, error-type vocabulary, cross-cutting notes, and a quick index.
 It must stay small. Full case history lives one file per customer under
 `cases/`, loaded only when that customer is in play. See `cases/README.md`
-for the package layout and sharding rule.
+for the package layout and sharding rule, and
+`references/git-and-tracking.md` for the branching / PR / worktree sequence
+and the project-root tracking files.
 
-## Workflow (see the folder's `CLAUDE.md` for the authoritative process)
+This skill is the authoritative process for EDI failure work in this folder —
+the project `CLAUDE.md` points here rather than restating it, so there is one
+home for each rule.
 
-1. User pastes the error message or partner email in chat and places the source
-   file in the folder. That file is the "before" record — never edited.
+## Workflow
+
+1. **Get the source file in front of you.** The user pastes the error message or
+   partner email in chat and drops the source file into the **main checkout**
+   (the project root) — they do this even when the active session is working
+   inside a `.claude/worktrees/...` worktree, so if you're in a worktree, copy
+   the file in from the main checkout path before doing anything else. That
+   file is the "before" record — never edited.
 2. **Match against past cases before diagnosing anything.** Customer + document
    type + error type first, then document type + error type across customers —
    see *How to match a new failure to a past case* below. A prior case is a
@@ -44,6 +54,11 @@ for the package layout and sharding rule.
    cases yet), then add one row to the **Quick index** below. Every version
    gets its own entry, including failed attempts. Never write full case
    detail into this file.
+8. **Branch, commit, PR, track, and clean up** — see
+   `references/git-and-tracking.md`. It covers the branching convention, the
+   PR-and-worktree-cleanup sequence, the three project-root tracking files
+   (`task-list.md`, `gaps.md`, `open-questions.md`), and when a case's files
+   move into `Resolved/`.
 
 ### Triage: substitution, or recalculation?
 
@@ -94,7 +109,8 @@ For recalculation and structural fixes, in this order:
    real work. Record in the case entry which fields the reference settled and
    which you inferred, so a future reader can tell the difference.
 5. **If they say they have none**, say so plainly, then run your own diagnosis
-   and ask the direct decision questions using the folder `CLAUDE.md`'s format.
+   and ask the direct decision questions using the decision-question format in
+   the user's global `CLAUDE.md`.
 
 **Boundary with step 6.** A reference settles how a field is *derived* — rate,
 basis, sign, code, which records exist — for the fields the error implicates. It
@@ -132,6 +148,32 @@ nothing fits, and add it to this list in the same edit.
 | `price-mismatch` | Unit or extended price disagrees with the PO |
 | `duplicate-document` | Same document number transmitted more than once |
 | `credit-sign-convention` | Credit memo (`InvoiceTypeCode=CR`) rejected/mis-posted because a field's sign didn't match the partner's expected convention for credits (e.g. tax sign, price sign) |
+
+## Rules
+
+Non-negotiables. Everything else in this file is judgement; these are not.
+
+- **Originals are never modified or deleted.** The file the user drops in is
+  the permanent record of what the failure looked like. If a fix doesn't
+  resolve the error, keep incrementing — `_v2`, `_v3`, `_v4` — in the same
+  folder, never editing a prior version. Each attempt is its own file until
+  the error is actually resolved. Moving a file into `Resolved/` is not
+  editing; changing its bytes is.
+- **Correction naming is always the `_v2` suffix**, same folder as the
+  original, same extension. No other pattern.
+- **Never commit case work directly to `master`.** It's the backup and restore
+  point for this project; it should only ever hold resolved or explicitly
+  logged state. Branch first — see `references/git-and-tracking.md`.
+- **One skill only: `edi-xml-failure-corrections`.** Every corrected failure
+  adds a case to it. Don't create a separate skill per error type or partner —
+  the accumulated cross-partner pattern matching is the entire value here.
+- **Every version gets its own case entry**, not just the first attempt —
+  including what was tried, whether it worked, and if not, why. Failed
+  attempts are as useful to a future lookup as successful ones, sometimes more.
+- **Logging a case is not a decision to check in on.** Do it automatically
+  every time a fix — or a "no fix needed" outcome — is reached, and add the
+  Quick index row in the same edit. A case recorded in only one of the two
+  places is effectively lost.
 
 ## General notes
 
