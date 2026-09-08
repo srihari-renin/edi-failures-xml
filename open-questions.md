@@ -22,6 +22,7 @@ Entry template:
 ### TimbrMart PSI1323681 — do you have a QC-with-freight reference invoice? — asked 2026-09-08
 **Question:** Reference-first step 3. Closest known-good documents in the project are the Canac Quebec invoices (PSI1310799, PSI1301959, PSI1310963) — right province, right ERP, tax correct, but **no freight charge on any of them** and a different partner's mapping (`SP` vs `PS` for QST). Is there a **Home Care TimbrMart** invoice, shipped to a **QC** dealer, with a **freight charge on the document**, that went through cleanly?
 **Why it matters / what's blocked:** It would settle all three questions below as observed fact instead of inference — whether freight sits inside the tax base, whether `TermsDiscountAmount` is computed on the tax-inclusive total, and whether `PS` is TimbrMart's correct QST code. The three questions below are **deferred behind this one** and should only be asked if the answer is "no such invoice exists."
+**Answered 2026-09-08:** Sri Hari confirmed such an invoice exists and is dropping it into the project root. Awaiting the file; the three questions below stay deferred until it has been read.
 
 ### TimbrMart PSI1323681 — is the $150 freight charge inside the GST/QST base? — asked 2026-09-08
 **Question:** Invoice PSI1323681 (Home Care TimbrMart, 810, Quebec ship-to 8262) carries a header `ChargesAllowances` record with `AllowChrgIndicator` = `C`, `AllowChrgCode` = `D240` (Freight), `AllowChrgAmt` = 150.00. Does GST/QST apply to net sales + freight (397.42) or to net sales only (247.42)?
