@@ -1,0 +1,64 @@
+# Orgill US Stores (`570ALLRENINHOLD`) — 810 — Case Log
+
+Covers 810 (invoice) documents only. Other document types for this customer
+(850, 856, ...) get their own `cases/orgill-us-stores-<doctype>.md` file —
+see `cases/README.md`.
+
+## Partner notes
+
+- **D2C order PO number format, CONFIRMED:** 6-digit Business Central Member
+  No. + hyphen + 4-digit Authorization No. suffix (e.g. `109942-3709`), **11
+  characters including the dash** — not 10 as Orgill's own rejection message
+  literally states. Confirmed against accepted/paid reference invoice
+  PSI1222579 (PO `069914-9067`). Treat Orgill's rejection-message wording as
+  an approximate description, not a literal character-count spec. —
+  [Case 01](#case-01--810--po-number-format--2026-09-11)
+- **D2C order also requires the same value in `LetterOfCredit`.** This feed
+  reuses the standard EDI `LetterOfCredit` tag to carry the authorization
+  number for Orgill D2C orders specifically — confirmed by the reference
+  invoice, where `LetterOfCredit` = `PurchaseOrderNumber` = `069914-9067`. On
+  a failing D2C invoice, expect `LetterOfCredit` to hold a placeholder (`NR`
+  on Case 01) instead of the real value. — [Case 01](#case-01--810--po-number-format--2026-09-11)
+- Both fields source from the sales order's Business Central **External
+  Document No.** and **Authorization No.** fields, which display the same
+  dash-separated value on the SO screen.
+
+## Cases
+
+Newest first.
+
+<!--
+Entry template — copy this block for every new case AND every new version:
+
+### Case NN — <doc type> — <error type> — <YYYY-MM-DD>
+- **Document type:** <810 / 850 / 856 / …>
+- **Error type:** <value from the vocabulary in the root SKILL.md>
+- **Reported by:** <person / system / portal, and how it arrived>
+- **Error message:** <verbatim text of the complaint or rejection>
+- **Source file:** <original filename — kept untouched>
+- **Reference file:** <known-good filename used for comparison, or n/a>
+- **Reference ID:** <invoice no. / PO no. / control no. that identifies this failure>
+- **Document defect:** <what is factually wrong in the source XML>
+- **Upstream root cause:** <what in the ERP / master data produced it, or "unconfirmed">
+- **Fix:** <exactly which elements changed, old → new>
+- **Files:** <original.xml> → <original_v2.xml>
+- **Status:** <resolved / resent, awaiting confirmation / failed — superseded by _v3>
+-->
+
+### Case 01 — 810 — po-number-format — 2026-09-11
+- **Document type:** 810
+- **Error type:** `po-number-format`
+- **Reported by:** Katherine (Orgill), via SPS rejection notice, relayed by Sri Hari in chat
+- **Error message:** "Data Error: InvoiceNumber:PSI1285562 The Ship to address location number sent (N104 when N101=ST) indicates this order is for a direct to customer order, however the purchase order number (BIG04) is not valid. If this invoice is for a stock order, update the Ship To location number (N104 when N101=ST) to match the warehouse code from the purchase order's N104 ST field, then re-send the invoice. If this invoice is for a direct to customer order, please update the purchase order number (BIG04) to be the 6-character customer account number followed by the 4-character credit authorization number, resulting in a 10-character purchase order number and re-send the invoice."
+- **Source file:** `4028691_Orgill US Stores 810.xml` (invoice PSI1285562, PO 84837, ship-to C.C. Allis & Sons Inc, Wyalusing PA) — untouched
+- **Reference file:** `3805032_Orgill US Stores 810 - Reference.xml` (invoice PSI1222579, accepted/paid, PO `069914-9067`, ship-to T H Rogers Lumber, Pea Ridge AR) — same customer, same doc type, a confirmed D2C order that was accepted; used to settle the exact PO number format (dash vs. no dash) and to discover the `LetterOfCredit` duplication
+- **Reference ID:** invoice PSI1285562, SO1269579
+- **Document defect:** `PurchaseOrderNumber` (BIG04) = `84837` — doesn't match the D2C format Orgill requires, and `LetterOfCredit` = `NR` — a placeholder, not the required authorization value. Ship-to (N104 when N101=ST) = `NR`, a non-warehouse value, correctly signals D2C per Orgill's own rule; the mismatch was entirely in the two PO/authorization fields, not the ship-to.
+- **Upstream root cause:** SO1269579 was a manual drop-ship order for an Orgill dealer (confirmed by Diego Arizaga, Retail Account Manager, by email: "this was a manual drop ship order for an orgill dealer... not an orgill warehouse"). The invoice's `PurchaseOrderNumber` carried the order's internal PO number instead of the D2C-specific identifier, and `LetterOfCredit` was left at its default placeholder. Business Central's own SO1269579 record already has the correct value in both its **External Document No.** and **Authorization No.** fields (`109942-3709` — Member No. `109942` + Authorization No. suffix `3709`), confirmed via a Business Central screenshot supplied by Sri Hari. The outbound 810 simply never populated `PurchaseOrderNumber`/`LetterOfCredit` from those SO fields for this order.
+- **Fix (applied in _v2):**
+  - `PurchaseOrderNumber`: `84837` → `109942-3709`
+  - `LetterOfCredit`: `NR` → `109942-3709`
+  - Format (dash included, 11 characters) confirmed against reference invoice PSI1222579, not from Katherine's message alone — her "10-character" wording undercounts the dash. See Partner notes.
+  - Nothing else changed. Ship-to N104 (`NR`) left as-is — the error only implicated the PO/authorization fields, not the address.
+- **Files:** `4028691_Orgill US Stores 810.xml` → `4028691_Orgill US Stores 810_v2.xml`; reference `3805032_Orgill US Stores 810 - Reference.xml`
+- **Status:** corrected, not yet resent to Orgill via SPS — awaiting Sri Hari to resubmit and confirm acceptance.

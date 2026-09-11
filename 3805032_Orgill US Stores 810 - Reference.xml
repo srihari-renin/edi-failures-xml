@@ -1,0 +1,196 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20251111</InvoiceDate>
+        <PurchaseOrderDate>20251013</PurchaseOrderDate>
+        <PurchaseOrderNumber>069914-9067</PurchaseOrderNumber>
+        <InvoiceTypeCode>DO</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>USD</BuyersCurrency>
+        <SellersCurrency>USD</SellersCurrency>
+        <Vendor>69702</Vendor>
+        <LetterOfCredit>069914-9067</LetterOfCredit>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>FDEG</CarrierAlphaCode>
+        <CarrierRouting>Fedex Ground</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>411238848519</CarrierProNumber>
+        <BillOfLadingNumber>SS1229442</BillOfLadingNumber>
+        <ShipDate>20251110</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20251125</TermsDiscountDate>
+        <TermsDiscountDueDays>14</TermsDiscountDueDays>
+        <TermsNetDueDate>20260109</TermsNetDueDate>
+        <TermsNetDueDays>60</TermsNetDueDays>
+        <TermsDiscountAmount>7.85</TermsDiscountAmount>
+        <TermsDescription>2%15D/N60</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin US LLC</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>069914</AddressLocationNumber>
+        <AddressName>T H ROGERS LUMBER</AddressName>
+        <Address1>105 W PICKENS ST</Address1>
+        <City>Pea Ridge</City>
+        <State>AR</State>
+        <PostalCode>72751</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>CO</ReferenceQual>
+        <ReferenceID>34S8459</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1215324</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1229442</ReferenceID>
+      </Reference>
+      <ChargesAllowances>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>C</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>52.94</AllowChrgAmt>
+        <AllowChrgHandlingCode>06</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>Freight</AllowChrgHandlingDescription>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1222579</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>BD400-102-SS</VendorPartNumber>
+          <ConsumerPackageCode>043044984622</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>BARN DR ADD A DOOR 102 SS BENT STR</PartDescription1>
+          <OrderQty>3.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>113.14</UnitPrice>
+          <ShipQty>3.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>339.42</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Totals>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1222579</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>392.36</TotalAmount>
+        <TotalNetSalesAmount>339.42</TotalNetSalesAmount>
+        <TotalQtyInvoiced>3.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>
