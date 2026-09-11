@@ -60,5 +60,5 @@ Entry template — copy this block for every new case AND every new version:
   - `LetterOfCredit`: `NR` → `109942-3709`
   - Format (dash included, 11 characters) confirmed against reference invoice PSI1222579, not from Katherine's message alone — her "10-character" wording undercounts the dash. See Partner notes.
   - Nothing else changed. Ship-to N104 (`NR`) left as-is — the error only implicated the PO/authorization fields, not the address.
-- **Files:** `4028691_Orgill US Stores 810.xml` → `4028691_Orgill US Stores 810_v2.xml`; reference `3805032_Orgill US Stores 810 - Reference.xml`
-- **Status:** corrected, not yet resent to Orgill via SPS — awaiting Sri Hari to resubmit and confirm acceptance.
+- **Files:** `Resolved/4028691_Orgill US Stores 810.xml` → `Resolved/4028691_Orgill US Stores 810_v2.xml`; reference `Resolved/3805032_Orgill US Stores 810 - Reference.xml`
+- **Status:** resolved. Corrected invoice sent to Orgill, confirmed by the user 2026-09-11. Files moved to `Resolved/`.
