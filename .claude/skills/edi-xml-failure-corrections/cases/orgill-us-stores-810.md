@@ -22,6 +22,12 @@ see `cases/README.md`.
 - Both fields source from the sales order's Business Central **External
   Document No.** and **Authorization No.** fields, which display the same
   dash-separated value on the SO screen.
+- **`LetterOfCredit` isn't always the broken field — check it first.** On
+  Case 02, `LetterOfCredit` already held the correct `<member>-<auth>` value;
+  only `PurchaseOrderNumber` had the stale internal PO number instead of that
+  same value. Before assuming both fields need fixing (as on Case 01), check
+  whether `LetterOfCredit` is already correct — if so, the fix is a single
+  substitution: copy it into `PurchaseOrderNumber`. — [Case 02](#case-02--810--po-number-format--2026-09-11)
 
 ## Cases
 
@@ -44,6 +50,23 @@ Entry template — copy this block for every new case AND every new version:
 - **Files:** <original.xml> → <original_v2.xml>
 - **Status:** <resolved / resent, awaiting confirmation / failed — superseded by _v3>
 -->
+
+### Case 02 — 810 — po-number-format — 2026-09-11
+- **Document type:** 810
+- **Error type:** `po-number-format`
+- **Reported by:** Orgill SPS rejection notice ("User Data Invalid"), relayed by Sri Hari in chat
+- **Error message:** "Data Error: InvoiceNumber:PSI1321287 The Ship to address location number sent (N104 when N101=ST) indicates this order is for a direct to customer order, however the purchase order number (BIG04) is not valid. If this invoice is for a stock order, please update the Ship to location number (N104 when N101=ST) to be the exact warehouse code sent in the N104 "ST" field of the purchase order and re-send the invoice. If this invoice is for a direct to customer order, please update the purchase order number (BIG04) to be the 6-digit customer account number and the 4-digit credit authorization number, resulting in a 10-digit purchase order number and re-send the invoice."
+- **Source file:** `4158334_Orgill US Stores 810.xml` (invoice PSI1321287, PO 2607-58535R, ship-to Helliesen Lumber, Yakima WA) — untouched
+- **Reference file:** n/a — matched directly to Case 01 (same customer, same doc type, same error type); no new reference document needed
+- **Reference ID:** invoice PSI1321287, SO1319846
+- **Document defect:** `PurchaseOrderNumber` (BIG04) = `2607-58535R` — the order's internal PO number, not the D2C format Orgill requires. Ship-to (N104 when N101=ST) = `343962`, a real customer (Helliesen Lumber), correctly signaling D2C. Unlike Case 01, `LetterOfCredit` was **already correct** at `343962-2065` — matching the ship-to number as its first 6 digits — so only one field was actually broken.
+- **Upstream root cause:** Not separately investigated — matches Case 01's pattern (D2C order's `PurchaseOrderNumber` never populated from the SO's authorization value), except this order's `LetterOfCredit` was populated correctly while `PurchaseOrderNumber` wasn't. Same upstream mechanism as Case 01 is the working assumption; not reconfirmed against Business Central for this specific order since the fix was self-evident from `LetterOfCredit` already present on the same document.
+- **Fix (applied in _v2):**
+  - `PurchaseOrderNumber`: `2607-58535R` → `343962-2065` (copied directly from this document's own `LetterOfCredit`, not derived externally)
+  - `LetterOfCredit`: unchanged — already correct.
+  - Nothing else changed.
+- **Files:** `4158334_Orgill US Stores 810.xml` → `4158334_Orgill US Stores 810_v2.xml`
+- **Status:** corrected, not yet resent to Orgill via SPS — awaiting Sri Hari to resubmit and confirm acceptance.
 
 ### Case 01 — 810 — po-number-format — 2026-09-11
 - **Document type:** 810
