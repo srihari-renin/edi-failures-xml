@@ -1,0 +1,147 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20211022</InvoiceDate>
+        <PurchaseOrderDate>20211022</PurchaseOrderDate>
+        <PurchaseOrderNumber>23-459129</PurchaseOrderNumber>
+        <InvoiceTypeCode>CR</InvoiceTypeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>V3752</Vendor>
+        <CarrierAlphaCode>OTHR</CarrierAlphaCode>
+        <CarrierRouting>OTHER</CarrierRouting>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsType>2%10D</TermsType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsNetDueDate>20211022</TermsNetDueDate>
+        <TermsNetDueDays>10</TermsNetDueDays>
+        <TermsDescription>2%10D</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>500106800</AddressLocationNumber>
+        <AddressName>CE- A Div of Renin (Montreal)</AddressName>
+        <Address1>3800 Boulevard du Tricentenaire</Address1>
+        <City>Montreal</City>
+        <State>QC</State>
+        <PostalCode>H1B 5T8</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>														
+        <AddressLocationNumber>1321-5</AddressLocationNumber>
+        <AddressName>TIMMINS BUILDING SUPPLIES</AddressName>
+        <Address1>1700 RIVERSIDE DRIVE</Address1>
+		<Address2>P.O BOX 980</Address2>
+        <City>TIMMINS</City>
+        <State>ON</State>
+        <PostalCode>P4R 1N7</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <LocationCodeQualifier>9</LocationCodeQualifier>														
+        <AddressLocationNumber>2014817930001</AddressLocationNumber>		
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- WAREHOUSE</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressLocationNumber>2014817930001</AddressLocationNumber>	
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- WAREHOUSE</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <ChargesAllowances>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>A</AllowChrgIndicator>
+        <AllowChrgCode>ZZZZ</AllowChrgCode>
+        <AllowChrgAmt>36.25</AllowChrgAmt>
+        <AllowChrgHandlingCode>02</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>Rebate 25% DUE to damage</AllowChrgHandlingDescription>
+      </ChargesAllowances>
+      <ChargesAllowances>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>C</AllowChrgIndicator>
+        <AllowChrgCode>ZZZZ</AllowChrgCode>
+        <AllowChrgAmt>1.09</AllowChrgAmt>
+        <AllowChrgHandlingCode>06</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>Unapplied discunt</AllowChrgHandlingDescription>
+      </ChargesAllowances>				  
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSCM014940</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <VendorPartNumber>04880MA22</VendorPartNumber>
+          <ConsumerPackageCode>065375329651</ConsumerPackageCode>
+          <PartDescription1>48 X 80 1/2 SLID EMBOSS."BOSTONIAN" WHIT</PartDescription1>
+          <PartDescription2>COLONIAL ITEM</PartDescription2>
+          <UnitPrice>0.00</UnitPrice>
+          <ShipQty>0.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>	
+    <Summary>
+      <Tax>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>GS</TaxTypeCode>
+        <TaxAmount>4.57</TaxAmount>
+        <TaxPercent>13.00</TaxPercent>
+        <TaxID>835391830</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM014940</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>39.73</TotalAmount>
+        <TotalNetSalesAmount>0.00</TotalNetSalesAmount>
+        <TotalQtyInvoiced>0.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>0</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

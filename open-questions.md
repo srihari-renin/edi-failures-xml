@@ -23,6 +23,13 @@ _(Empty — fills in as questions come up.)_
 
 ## Answered
 
+### Home Hardware PSCM031734 (810 CR, `credit-sign-convention`) — reference found, both questions settled 2026-09-14
+Sri Hari had no Home Hardware reference, but the SharePoint archive on `I:\EDI Info` did: **PSCM014940**
+(`2027841_Home Hardware Colonial 810 Credit Memo To Compare.xml`), an accepted HH credit with both an `A`
+allowance and a `C` charge. It shows HH takes `AllowChrgAmt` as sent (sign included) and negates lines and
+taxes itself, so a deduction from a credit is a **positive `C`**. The `-60.46` line is a **restocking charge**
+(NAV G/L 42010, return reason B7 — confirmed by Sri Hari's NAV screenshot). Fix: `-60.46` → `60.46`.
+
 ### TimbrMart PSI1323681 (810, `tax-missing`) — all four questions settled 2026-09-08
 Reference invoice **PSI1247205** (`3892509_Home Care TimbrMart 810 - Reference.xml`) — same
 customer, same doc type, QC ship-to, same $150.00 `D240` freight charge — answered every one

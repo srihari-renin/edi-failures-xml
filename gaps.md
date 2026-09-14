@@ -23,6 +23,12 @@ Entry template:
 - **Related case(s):** link to case entries if applicable, or "n/a"
 -->
 
+### NAV→SPS map passes signed credit-memo charge lines through — Home Hardware CR — 2026-09-14
+- **Context:** Home Hardware Colonial 810 Credit Memo PSCM031734 — [Case 01](.claude/skills/edi-xml-failure-corrections/cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14)
+- **Gap / limitation:** a restocking charge on a NAV credit memo is a negative G/L line (42010, return reason B7), and the 810 map copies that signed amount straight into `AllowChrgAmt` (`C` / `-60.46`). Home Hardware takes the amount as sent, so every credit memo with a negative charge/allowance line will be rejected out of balance by 2× the amount. Not fixed at source; corrected on the document only.
+- **Impact:** recurs on any Home Hardware credit memo carrying a restocking charge, charge-back or unapplied discount. Until the map emits `abs(amount)` with the indicator carrying the direction, check the sign of every `AllowChrgAmt` on outbound Home Hardware credits before they go. Also not yet checked whether other recent PSCM* documents to 833ALLRENINHOLD have the same defect.
+- **Related case(s):** [home-hardware-colonial-810-credit-memo.md#case-01](.claude/skills/edi-xml-failure-corrections/cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14)
+
 ### NAV G/L inconsistency on WSH219483 — root cause untraced — 2026-08-28
 - **Context:** Home Depot.CA MDO 856, SO1327572 / warehouse shipment WSH219483 — [Case 01](.claude/skills/edi-xml-failure-corrections/cases/home-depot-ca-mdo-856.md#case-01--856--missing-segment--2026-08-28)
 - **Gap / limitation:** WSH219483 refused to post with *"The transaction cannot be completed because it will cause inconsistencies in the G/L Entry table."* The standard remedies were tried and all failed: removing the line from the package, removing it from the warehouse shipment line, applying a penny adjustment on the sales order, then re-adding and re-building cartons. The shipment was ultimately deleted and the order shipped/invoiced straight from the sales order. **Why SO1327572 specifically triggered the inconsistency was never established** — the other four sales orders on the same shipment (SO1327637, SO1327656, SO1327577, SO1327612) posted normally, as did the sibling shipment WSH219461 the same day.
