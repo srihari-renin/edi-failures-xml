@@ -23,6 +23,13 @@ _(Empty — fills in as questions come up.)_
 
 ## Answered
 
+### Home Hardware PSCM031734 (810 CR, `credit-sign-convention`) — reference found, both questions settled 2026-09-14
+Sri Hari had no Home Hardware reference, but the SharePoint archive on `I:\EDI Info` did: **PSCM014940**
+(`2027841_Home Hardware Colonial 810 Credit Memo To Compare.xml`), an accepted HH credit with both an `A`
+allowance and a `C` charge. It shows HH takes `AllowChrgAmt` as sent (sign included) and negates lines and
+taxes itself, so a deduction from a credit is a **positive `C`**. The `-60.46` line is a **restocking charge**
+(NAV G/L 42010, return reason B7 — confirmed by Sri Hari's NAV screenshot). Fix: `-60.46` → `60.46`.
+
 ### Orgill PSI1297591 — does BuyerPartNumber requirement disappear once PO isn't 8 characters? — answered 2026-09-15
 Yes. `_v2` (PO `125005-7176`, 11 characters) was sent as-is, with `BuyerPartNumber` still absent
 on `LineSequenceNumber` 2 and 3, and Orgill accepted it. Confirms the requirement is conditional

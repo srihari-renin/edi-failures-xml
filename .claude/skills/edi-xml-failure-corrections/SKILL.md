@@ -230,6 +230,17 @@ Partner notes section.
   *and* the total), and matches Canadian GST/QST treatment of vendor-charged
   freight on a taxable supply. Watch for it: charges are rare here — nearly
   every `ChargesAllowances` record in the project is an `A`.
+- **Any partner: a credit-memo sign convention is per-partner — never carry it
+  across.** TimberMart passes `TaxAmount` through unchanged and negates the
+  rest, so tax must go **negative**; Home Hardware negates lines *and* taxes
+  itself and passes `AllowChrgAmt` through with its sign, so **everything goes
+  positive** and direction lives in the `A`/`C` indicator. Same ERP, same
+  document type, opposite rules. Treat a new partner's CR convention as unknown
+  until an accepted credit from *that* partner shows it — the
+  `I:\EDI Info\Moved to Sharepoint\EDI Info XML Archives\` folder holds
+  "To Compare" copies for several partners and is worth searching before
+  asking. See `cases/home-hardware-colonial-810-credit-memo.md` and
+  `cases/home-care-timbrmart-810-credit-memo.md`.
 - **`CarrierProNumber` format `TST-CF 701 ######` → carrier is TST Overland
   Express** (`CarrierAlphaCode` `OVLD`, `CarrierRouting` `TST Overland
   Express`). Confirmed on two different customers with this exact pro-number
@@ -245,6 +256,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 01 | Home Hardware Colonial | 810 Credit Memo | `credit-sign-convention` | resolved | [cases/home-hardware-colonial-810-credit-memo.md](cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14) |
 | 03 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-03--810--po-number-format--2026-09-15) |
 | 02 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-02--810--po-number-format--2026-09-11) |
 | 01 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-01--810--po-number-format--2026-09-11) |

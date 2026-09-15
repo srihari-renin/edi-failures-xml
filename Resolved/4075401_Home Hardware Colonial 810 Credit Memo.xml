@@ -1,0 +1,140 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260513</InvoiceDate>
+        <PurchaseOrderDate>20260513</PurchaseOrderDate>
+        <PurchaseOrderNumber>81901</PurchaseOrderNumber>
+        <InvoiceTypeCode>CR</InvoiceTypeCode>
+        <BuyersCurrency>CAD</BuyersCurrency>
+        <SellersCurrency>CAD</SellersCurrency>
+        <Vendor>V3752</Vendor>
+        <CustomerAccountNumber>2575-9</CustomerAccountNumber>
+        <CarrierAlphaCode>PRLA</CarrierAlphaCode>
+        <CarrierRouting>Purolator Inc.</CarrierRouting>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsNetDueDate>20260423</TermsNetDueDate>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <AddressLocationNumber>2575-9</AddressLocationNumber>
+        <AddressName>ROBERGE ET FILS INC.</AddressName>
+        <AddressAlternateName>HOME HARDWARE LTD.     #2575-9</AddressAlternateName>
+        <Address1>45 7 IEME AVENUE</Address1>
+        <Address2>HOME HARDWARE LTD.     #2575-9</Address2>
+        <City>LA SARRE</City>
+        <State>QC</State>
+        <PostalCode>J9Z 1M5</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ALLIANCE INTERNATIONAL LLC (#05001068)- STORES</AddressName>
+        <Address1>34 HENRY STREET WEST</Address1>
+        <Address2>HOME HARDWARE STORES LIMITED</Address2>
+        <City>ST-JACOBS</City>
+        <State>ON</State>
+        <PostalCode>N0B 2N0</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <ChargesAllowances>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>C</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>-60.46</AllowChrgAmt>
+        <AllowChrgHandlingCode>06</AllowChrgHandlingCode>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSCM031734</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>WP20036</VendorPartNumber>
+          <ConsumerPackageCode>065375026529</ConsumerPackageCode>
+          <PartDescription1>2 W.IRON BAL. PLAIN ZEN 1/2 X 38" BLACK</PartDescription1>
+          <PartDescription2>COLONIAL ITEM</PartDescription2>
+          <UnitPrice>12.73</UnitPrice>
+          <ShipQty>19.00</ShipQty>
+          <ShipQtyUOM>PR</ShipQtyUOM>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Tax>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>GS</TaxTypeCode>
+        <TaxAmount>9.07</TaxAmount>
+        <TaxPercent>5.00</TaxPercent>
+        <TaxID>1225162693TQ0001</TaxID>
+      </Tax>
+      <Tax>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>TX</RecordType>
+        <TaxTypeCode>SP</TaxTypeCode>
+        <TaxAmount>18.10</TaxAmount>
+        <TaxPercent>9.97</TaxPercent>
+        <TaxID>1225162693TQ0001</TaxID>
+      </Tax>
+      <Totals>
+        <TradingPartnerId>833ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSCM031734</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>208.58</TotalAmount>
+        <TotalNetSalesAmount>241.87</TotalNetSalesAmount>
+        <TotalQtyInvoiced>19.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>
