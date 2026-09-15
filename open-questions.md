@@ -30,6 +30,12 @@ allowance and a `C` charge. It shows HH takes `AllowChrgAmt` as sent (sign inclu
 taxes itself, so a deduction from a credit is a **positive `C`**. The `-60.46` line is a **restocking charge**
 (NAV G/L 42010, return reason B7 — confirmed by Sri Hari's NAV screenshot). Fix: `-60.46` → `60.46`.
 
+### Orgill PSI1297591 — does BuyerPartNumber requirement disappear once PO isn't 8 characters? — answered 2026-09-15
+Yes. `_v2` (PO `125005-7176`, 11 characters) was sent as-is, with `BuyerPartNumber` still absent
+on `LineSequenceNumber` 2 and 3, and Orgill accepted it. Confirms the requirement is conditional
+on an 8-character PO, not unconditional — logged as a CONFIRMED Partner note in
+`cases/orgill-us-stores-810.md` for future Orgill cases with an 8-character original PO.
+
 ### TimbrMart PSI1323681 (810, `tax-missing`) — all four questions settled 2026-09-08
 Reference invoice **PSI1247205** (`3892509_Home Care TimbrMart 810 - Reference.xml`) — same
 customer, same doc type, QC ship-to, same $150.00 `D240` freight charge — answered every one

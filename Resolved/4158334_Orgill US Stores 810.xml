@@ -1,0 +1,234 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260827</InvoiceDate>
+        <PurchaseOrderDate>20260804</PurchaseOrderDate>
+        <PurchaseOrderNumber>2607-58535R</PurchaseOrderNumber>
+        <InvoiceTypeCode>DO</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>USD</BuyersCurrency>
+        <SellersCurrency>USD</SellersCurrency>
+        <Vendor>69702</Vendor>
+        <LetterOfCredit>343962-2065</LetterOfCredit>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>CNWY</CarrierAlphaCode>
+        <CarrierRouting>XPO LTL</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>304567480</CarrierProNumber>
+        <BillOfLadingNumber>SS1328884</BillOfLadingNumber>
+        <ShipDate>20260826</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260910</TermsDiscountDate>
+        <TermsDiscountDueDays>14</TermsDiscountDueDays>
+        <TermsNetDueDate>20261025</TermsNetDueDate>
+        <TermsNetDueDays>60</TermsNetDueDays>
+        <TermsDiscountAmount>18.18</TermsDiscountAmount>
+        <TermsDescription>2%15D/N60</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin US LLC</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>343962</AddressLocationNumber>
+        <AddressName>HELLIESEN LUMBER</AddressName>
+        <Address1>3501 W. WASHINGTON AVE</Address1>
+        <City>Yakima</City>
+        <State>WA</State>
+        <PostalCode>98903</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUPELO-1</AddressLocationNumber>
+        <AddressName>Renin Tupelo</AddressName>
+        <Address1>1141 Ryder St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>SPE</ReferenceQual>
+        <ReferenceID>TSCA Title VI Compliant</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1319846</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1328884</ReferenceID>
+      </Reference>
+      <ChargesAllowances>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>HC</RecordType>
+        <AllowChrgIndicator>C</AllowChrgIndicator>
+        <AllowChrgCode>D240</AllowChrgCode>
+        <AllowChrgAmt>211.05</AllowChrgAmt>
+        <AllowChrgHandlingCode>06</AllowChrgHandlingCode>
+        <AllowChrgHandlingDescription>Freight</AllowChrgHandlingDescription>
+      </ChargesAllowances>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1321287</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <VendorPartNumber>HC065P01PR1PRE36084</VendorPartNumber>
+          <ConsumerPackageCode>043044997141</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>CHEVRON H/C BRN DOOR BENT STRAP PRIMED 36"X84"</PartDescription1>
+          <OrderQty>2.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>286.58</UnitPrice>
+          <ShipQty>2.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>573.16</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1321287</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>2</LineSequenceNumber>
+          <VendorPartNumber>BDB125-MB</VendorPartNumber>
+          <ConsumerPackageCode>043045001441</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>SPECTRUM TRACK JOINER BLACK BAG</PartDescription1>
+          <OrderQty>1.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>4.51</UnitPrice>
+          <ShipQty>1.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>4.51</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1321287</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>3</LineSequenceNumber>
+          <VendorPartNumber>BDB960-4060-MB</VendorPartNumber>
+          <ConsumerPackageCode>043045001434</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>SOFT CLOSE WITH J CLIP SET 40-60 KG MB BAG</PartDescription1>
+          <OrderQty>2.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>60.15</UnitPrice>
+          <ShipQty>2.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>120.30</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Totals>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1321287</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>909.02</TotalAmount>
+        <TotalNetSalesAmount>697.97</TotalNetSalesAmount>
+        <TotalQtyInvoiced>5.00</TotalQtyInvoiced>
+        <TotalWeight>0.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>3</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>
