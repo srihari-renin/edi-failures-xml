@@ -65,8 +65,8 @@ Entry template — copy this block for every new case AND every new version:
   - `PurchaseOrderNumber`: `2607-58535R` → `343962-2065` (copied directly from this document's own `LetterOfCredit`, not derived externally)
   - `LetterOfCredit`: unchanged — already correct.
   - Nothing else changed.
-- **Files:** `4158334_Orgill US Stores 810.xml` → `4158334_Orgill US Stores 810_v2.xml`
-- **Status:** corrected, not yet resent to Orgill via SPS — awaiting Sri Hari to resubmit and confirm acceptance.
+- **Files:** `Resolved/4158334_Orgill US Stores 810.xml` → `Resolved/4158334_Orgill US Stores 810_v2.xml`
+- **Status:** resolved. Corrected invoice sent to Orgill, confirmed by the user 2026-09-15. Files moved to `Resolved/`.
 
 ### Case 01 — 810 — po-number-format — 2026-09-11
 - **Document type:** 810

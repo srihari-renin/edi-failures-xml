@@ -14,5 +14,4 @@ keeping both new rows — same rule as the Quick index table in the skill.
 
 | Task | Branch | Started | Notes |
 |---|---|---|---|
-| Orgill US Stores PSI1321287 (SO1319846) — PO number for D2C order, `po-number-format` (810) | `case/orgill-us-stores/psi1321287` | 2026-09-11 | `_v2` fix applied (`PurchaseOrderNumber` = `343962-2065`, copied from this document's own already-correct `LetterOfCredit`). Awaiting resend to Orgill via SPS and partner confirmation before moving to `Resolved/`. |
 | DIB PO DIB300124 carrier fields — ASN SS1326194 (856) and invoice PSI1318473 (810), both `missing-segment` | `claude/dib-asn-invoice-errors-fe4453` | 2026-08-26 | Both `_v2` fixes applied (CarrierAlphaCode/CarrierRouting = ODFL / Old Dominion). Awaiting resend to DIB and partner confirmation before moving to Resolved/. |
