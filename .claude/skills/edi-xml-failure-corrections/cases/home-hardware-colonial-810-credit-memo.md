@@ -29,7 +29,7 @@ see `cases/README.md`.
   `I:\EDI Info\Moved to Sharepoint\EDI Info XML Archives\`:
   `2027841_Home Hardware Colonial 810 Credit Memo To Compare.xml`
   (PSCM014940 — `A` allowance + `C` charge, ON HST; copied into the project
-  as `2027841_Home Hardware Colonial 810 Credit Memo - Reference.xml`),
+  as `Resolved/2027841_Home Hardware Colonial 810 Credit Memo - Reference.xml`),
   `2065107_… To Compare.xml` (PSCM018133 — single `A`, AB GST) and
   `2065535_… To Compare - Stores.xml` (PSCM018724 — `A`, QC GST+QST with
   `SP`). All three carry the credit body as a positive `A` allowance with
@@ -80,5 +80,5 @@ Entry template — copy this block for every new case AND every new version:
   - `AllowChrgIndicator` stays `C`; `AllowChrgCode` stays `D240` (see Partner notes); nothing else changed. One line differs between the two files.
   - Balance under Home Hardware's rule: `−241.87 + 60.46 − 9.07 − 18.10 = −208.58` = −`TotalAmount` ✓
 - **Not changed, noted only:** NAV's ship-to on the credit memo is Renin Mississauga (return-to address) while the XML `ST` address is the La Sarre store — Home Hardware did not object, and the error doesn't implicate it. `TermsNetDueDate` 20260423 predates `InvoiceDate` 20260513 — same reasoning.
-- **Files:** `4075401_Home Hardware Colonial 810 Credit Memo.xml` → `4075401_Home Hardware Colonial 810 Credit Memo_v2.xml`; reference `2027841_Home Hardware Colonial 810 Credit Memo - Reference.xml`
-- **Status:** `_v2` created, awaiting resend to Home Hardware via SPS and partner confirmation. Move all three files to `Resolved/` once confirmed.
+- **Files:** `Resolved/4075401_Home Hardware Colonial 810 Credit Memo.xml` → `Resolved/4075401_Home Hardware Colonial 810 Credit Memo_v2.xml`; reference `Resolved/2027841_Home Hardware Colonial 810 Credit Memo - Reference.xml` (all three moved to `Resolved/` once the corrected credit was confirmed sent)
+- **Status:** resolved. Corrected credit sent to Home Hardware, confirmed by the user 2026-09-15. Files moved to `Resolved/`.

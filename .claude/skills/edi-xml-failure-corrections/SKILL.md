@@ -256,7 +256,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
-| 01 | Home Hardware Colonial | 810 Credit Memo | `credit-sign-convention` | resent, awaiting confirmation | [cases/home-hardware-colonial-810-credit-memo.md](cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14) |
+| 01 | Home Hardware Colonial | 810 Credit Memo | `credit-sign-convention` | resolved | [cases/home-hardware-colonial-810-credit-memo.md](cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14) |
 | 01 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-01--810--po-number-format--2026-09-11) |
 | 01 | Home Care TimbrMart | 810 | `tax-missing` | resolved | [cases/home-care-timbrmart-810.md](cases/home-care-timbrmart-810.md#case-01--810--tax-missing--2026-09-08) |
 | 01 | Home Depot.CA MDO | 810 | `price-mismatch` | resolved | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
