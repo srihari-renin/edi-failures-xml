@@ -1,0 +1,218 @@
+<Invoices>
+  <Invoice>
+    <Header>
+      <InvoiceHeader>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HO</RecordType>
+        <InvoiceDate>20260615</InvoiceDate>
+        <PurchaseOrderDate>20260507</PurchaseOrderDate>
+        <PurchaseOrderNumber>42794261</PurchaseOrderNumber>
+        <InvoiceTypeCode>DO</InvoiceTypeCode>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <BuyersCurrency>USD</BuyersCurrency>
+        <SellersCurrency>USD</SellersCurrency>
+        <Vendor>69702</Vendor>
+        <LetterOfCredit>NR</LetterOfCredit>
+        <FOBPayCode>PP</FOBPayCode>
+        <CarrierAlphaCode>ABFS</CarrierAlphaCode>
+        <CarrierRouting>ABF Freight System Inc</CarrierRouting>
+        <ShipmentStatusCode>CC</ShipmentStatusCode>
+        <CarrierProNumber>424532931</CarrierProNumber>
+        <BillOfLadingNumber>SS1305133</BillOfLadingNumber>
+        <ShipDate>20260612</ShipDate>
+      </InvoiceHeader>
+      <PaymentTerms>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HT</RecordType>
+        <TermsBasisDateCode>3</TermsBasisDateCode>
+        <TermsDiscountPercentage>2.00</TermsDiscountPercentage>
+        <TermsDiscountDate>20260627</TermsDiscountDate>
+        <TermsDiscountDueDays>12</TermsDiscountDueDays>
+        <TermsNetDueDate>20260811</TermsNetDueDate>
+        <TermsNetDueDays>60</TermsNetDueDays>
+        <TermsDiscountAmount>157.94</TermsDiscountAmount>
+        <TermsDescription>2%15D/N60</TermsDescription>
+      </PaymentTerms>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>TUOFFSITE</AddressLocationNumber>
+        <AddressName>Renin Tupelo Offsite</AddressName>
+        <Address1>770 South Green St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressLocationNumber>125005</AddressLocationNumber>
+        <AddressName>SCHOENEMAN'S -HARRISBURG</AddressName>
+        <Address1>600 N CLIFF AVE</Address1>
+        <City>HARRISBURG</City>
+        <State>SD</State>
+        <PostalCode>57032</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>TUOFFSITE</AddressLocationNumber>
+        <AddressName>Renin Tupelo Offsite</AddressName>
+        <Address1>770 South Green St.</Address1>
+        <City>Tupelo</City>
+        <State>MS</State>
+        <PostalCode>38804</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ZZ</AddressTypeCode>
+        <AddressName>ORGILL BROTHERS &amp; COMPANY - STORES</AddressName>
+        <Address1>PO Box 140                                        </Address1>
+        <City>MEMPHIS</City>
+        <State>TN</State>
+        <PostalCode>37027</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>IL</ReferenceQual>
+        <ReferenceID>SO1290820</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>PK</ReferenceQual>
+        <ReferenceID>SS1305133</ReferenceID>
+      </Reference>
+    </Header>
+    <LineItems>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1297591</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>1</LineSequenceNumber>
+          <BuyerPartNumber>671-7839</BuyerPartNumber>
+          <VendorPartNumber>201320</VendorPartNumber>
+          <ConsumerPackageCode>043044210271</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>P-3636-FBV FRLS SQ MIRR BEVEL</PartDescription1>
+          <OrderQty>160.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>34.96</UnitPrice>
+          <ShipQty>160.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>5593.60</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1297591</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>2</LineSequenceNumber>
+          <VendorPartNumber>201240</VendorPartNumber>
+          <ConsumerPackageCode>043044210110</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>MIRR 30 X36 BEV REC (20-1240)</PartDescription1>
+          <OrderQty>50.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>27.30</UnitPrice>
+          <ShipQty>50.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>1365.00</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+      <LineItem>
+        <InvoiceLine>
+          <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+          <InvoiceNumber>PSI1297591</InvoiceNumber>
+          <RecordType>LI</RecordType>
+          <LineSequenceNumber>3</LineSequenceNumber>
+          <VendorPartNumber>201414</VendorPartNumber>
+          <ConsumerPackageCode>043044220249</ConsumerPackageCode>
+          <PartNumberQualifier1>LT</PartNumberQualifier1>
+          <PartDescription1>CP4236 4MM BULK MIRR</PartDescription1>
+          <OrderQty>26.00</OrderQty>
+          <OrderQtyUOM>EA</OrderQtyUOM>
+          <UnitPrice>36.10</UnitPrice>
+          <ShipQty>26.00</ShipQty>
+          <ShipQtyUOM>EA</ShipQtyUOM>
+          <ExtendedItemTotal>938.60</ExtendedItemTotal>
+          <ProductProcessDescription>ALLITEMS</ProductProcessDescription>
+        </InvoiceLine>
+      </LineItem>
+    </LineItems>
+    <Summary>
+      <Totals>
+        <TradingPartnerId>570ALLRENINHOLD</TradingPartnerId>
+        <InvoiceNumber>PSI1297591</InvoiceNumber>
+        <RecordType>ST</RecordType>
+        <TotalAmount>7897.20</TotalAmount>
+        <TotalNetSalesAmount>7897.20</TotalNetSalesAmount>
+        <TotalQtyInvoiced>236.00</TotalQtyInvoiced>
+        <TotalWeight>3424.00</TotalWeight>
+        <TotalVolume>0.00</TotalVolume>
+        <TotalLineItemNumber>3</TotalLineItemNumber>
+        <TotalQtyInvoicedUOM>EA</TotalQtyInvoicedUOM>
+      </Totals>
+    </Summary>
+  </Invoice>
+</Invoices>

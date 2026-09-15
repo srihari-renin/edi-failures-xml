@@ -45,6 +45,24 @@ Entry template — copy this block for every new case AND every new version:
 - **Status:** <resolved / resent, awaiting confirmation / failed — superseded by _v3>
 -->
 
+### Case 03 — 810 — po-number-format — 2026-09-15
+- **Document type:** 810
+- **Error type:** `po-number-format`
+- **Reported by:** Orgill SPS rejection notice, relayed by Sri Hari in chat
+- **Error message:** same wording pattern as Case 01/02 — ship-to (N104 when N101=ST) indicates D2C, `PurchaseOrderNumber` (BIG04) not valid for that order type.
+- **Source file:** `4071464_Orgill US Stores 810.xml` (invoice PSI1297591, PO 42794261, ship-to Schoeneman's - Harrisburg, Harrisburg SD) — untouched
+- **Reference file:** n/a — matched directly to Case 01/02 by customer + doc type + error type
+- **Reference ID:** invoice PSI1297591, SO1290820
+- **Document defect:** `PurchaseOrderNumber` (BIG04) = `42794261` and `LetterOfCredit` = `NR` — same shape as Case 01 (both fields wrong, `LetterOfCredit` a placeholder, not a usable value already in the document). Ship-to `125005` correctly signals D2C.
+- **Upstream root cause:** Same mechanism as Case 01/02 — D2C order's PO/authorization fields never populated from the SO. Not independently reconfirmed in Business Central for this order beyond the value Sri Hari supplied.
+- **Fix (applied in _v2):**
+  - `PurchaseOrderNumber`: `42794261` → `125005-7176`
+  - `LetterOfCredit`: `NR` → `125005-7176`
+  - Value supplied directly by Sri Hari from Business Central (SO1290820's External Document No./Authorization No.), consistent with the ship-to number (`125005`) matching the value's first 6 digits, same pattern as Case 01/02.
+  - Nothing else changed.
+- **Files:** `4071464_Orgill US Stores 810.xml` → `4071464_Orgill US Stores 810_v2.xml`
+- **Status:** corrected, not yet resent to Orgill via SPS — awaiting Sri Hari to resubmit and confirm acceptance.
+
 ### Case 01 — 810 — po-number-format — 2026-09-11
 - **Document type:** 810
 - **Error type:** `po-number-format`
