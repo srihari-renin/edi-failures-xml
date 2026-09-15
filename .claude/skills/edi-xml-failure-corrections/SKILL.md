@@ -245,6 +245,7 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 02 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-02--810--po-number-format--2026-09-11) |
 | 01 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-01--810--po-number-format--2026-09-11) |
 | 01 | Home Care TimbrMart | 810 | `tax-missing` | resolved | [cases/home-care-timbrmart-810.md](cases/home-care-timbrmart-810.md#case-01--810--tax-missing--2026-09-08) |
 | 01 | Home Depot.CA MDO | 810 | `price-mismatch` | resolved | [cases/home-depot-ca-mdo-810.md](cases/home-depot-ca-mdo-810.md#case-01--810--price-mismatch--2026-08-28) |
