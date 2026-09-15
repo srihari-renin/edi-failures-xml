@@ -28,6 +28,21 @@ see `cases/README.md`.
   same value. Before assuming both fields need fixing (as on Case 01), check
   whether `LetterOfCredit` is already correct — if so, the fix is a single
   substitution: copy it into `PurchaseOrderNumber`. — [Case 02](#case-02--810--po-number-format--2026-09-11)
+- **CONFIRMED: an 8-character original `PurchaseOrderNumber` also triggers a
+  `BuyerPartNumber`-required check, and fixing the D2C PO format clears it as
+  a side effect.** On Case 03, Orgill's rejection additionally flagged
+  `BuyerPartNumber` missing on every line item that lacked one, with the
+  stated condition "required when PO number is 8 characters long." The
+  original PO (`42794261`) was exactly 8 characters; Cases 01 and 02's
+  original POs weren't (5 and 11 characters respectively), and neither got
+  this second error. `_v2` corrected the PO to the 11-character D2C format
+  without touching `BuyerPartNumber`, and Orgill accepted it — **confirming
+  the requirement is genuinely conditional on the PO being 8 characters, not
+  an unconditional per-line requirement.** If a future case has an original
+  PO that happens to be 8 characters, expect this second rejection line and
+  don't populate `BuyerPartNumber` reactively — the D2C PO-format fix alone
+  should clear it, same as here. See
+  [Case 03](#case-03--810--po-number-format--2026-09-15).
 
 ## Cases
 
@@ -50,6 +65,25 @@ Entry template — copy this block for every new case AND every new version:
 - **Files:** <original.xml> → <original_v2.xml>
 - **Status:** <resolved / resent, awaiting confirmation / failed — superseded by _v3>
 -->
+
+### Case 03 — 810 — po-number-format — 2026-09-15
+- **Document type:** 810
+- **Error type:** `po-number-format`
+- **Reported by:** Orgill SPS rejection notice, relayed by Sri Hari in chat (source filename `IN4071464 Orgill US Stores 810.C40004077`)
+- **Error message:** "InvoiceNumber:PSI1297591 Missing mandatory data: /Invoice/LineItem/InvoiceLine/BuyerPartNumber; BuyerPartNumber is required when PO number is 8 characters long" (reported twice — once per affected line item) followed by "InvoiceNumber:PSI1297591 The Ship to address location number sent (N104 when N101=ST) indicates this order is for a direct to customer order, however the purchase order number (BIG04) is not valid. If this invoice is for a stock order, update the Ship To location number (N104 when N101=ST) to match the warehouse code from the purchase order's N104 ST field, then re-send the invoice. If this invoice is for a direct to customer order, please update the purchase order number (BIG04) to be the 6-character customer account number followed by the 4-character credit authorization number, resulting in a 10-character purchase order number and re-send the invoice." — **three rejection lines on one invoice, two distinct defects.** See the open flag below the fix.
+- **Source file:** `4071464_Orgill US Stores 810.xml` (invoice PSI1297591, PO 42794261, ship-to Schoeneman's - Harrisburg, Harrisburg SD) — untouched
+- **Reference file:** n/a — matched directly to Case 01/02 by customer + doc type + error type
+- **Reference ID:** invoice PSI1297591, SO1290820
+- **Document defect:** `PurchaseOrderNumber` (BIG04) = `42794261` and `LetterOfCredit` = `NR` — same shape as Case 01 (both fields wrong, `LetterOfCredit` a placeholder, not a usable value already in the document). Ship-to `125005` correctly signals D2C.
+- **Upstream root cause:** Same mechanism as Case 01/02 — D2C order's PO/authorization fields never populated from the SO. Not independently reconfirmed in Business Central for this order beyond the value Sri Hari supplied.
+- **Fix (applied in _v2):**
+  - `PurchaseOrderNumber`: `42794261` → `125005-7176`
+  - `LetterOfCredit`: `NR` → `125005-7176`
+  - Value supplied directly by Sri Hari from Business Central (SO1290820's External Document No./Authorization No.), consistent with the ship-to number (`125005`) matching the value's first 6 digits, same pattern as Case 01/02.
+  - Nothing else changed.
+  - **Not fixed in this `_v2`, flagged instead — now CONFIRMED correct:** the rejection also carried two `BuyerPartNumber` missing-data errors, on `LineSequenceNumber` 2 (`VendorPartNumber` 201240) and 3 (201414) — line 1 (671-7839) already has one. Orgill's wording ties the requirement to PO length: "required when PO number is 8 characters long," and the *original* `PurchaseOrderNumber` (`42794261`) was exactly 8 characters — the only one of Cases 01–03 where that was true. The theory was that fixing the PO to the 11-character D2C format (`125005-7176`) would also remove this requirement as a side effect. **Confirmed: Orgill accepted `_v2` as sent, with `BuyerPartNumber` still absent on lines 2 and 3** — the 8-character-PO condition was the actual trigger, not an unconditional requirement. See Partner notes.
+- **Files:** `Resolved/4071464_Orgill US Stores 810.xml` → `Resolved/4071464_Orgill US Stores 810_v2.xml`
+- **Status:** resolved. Corrected invoice sent to Orgill, confirmed by the user 2026-09-15 — accepted with `BuyerPartNumber` still absent, confirming the 8-character-PO theory above. Files moved to `Resolved/`.
 
 ### Case 02 — 810 — po-number-format — 2026-09-11
 - **Document type:** 810

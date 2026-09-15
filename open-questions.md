@@ -23,6 +23,12 @@ _(Empty — fills in as questions come up.)_
 
 ## Answered
 
+### Orgill PSI1297591 — does BuyerPartNumber requirement disappear once PO isn't 8 characters? — answered 2026-09-15
+Yes. `_v2` (PO `125005-7176`, 11 characters) was sent as-is, with `BuyerPartNumber` still absent
+on `LineSequenceNumber` 2 and 3, and Orgill accepted it. Confirms the requirement is conditional
+on an 8-character PO, not unconditional — logged as a CONFIRMED Partner note in
+`cases/orgill-us-stores-810.md` for future Orgill cases with an 8-character original PO.
+
 ### TimbrMart PSI1323681 (810, `tax-missing`) — all four questions settled 2026-09-08
 Reference invoice **PSI1247205** (`3892509_Home Care TimbrMart 810 - Reference.xml`) — same
 customer, same doc type, QC ship-to, same $150.00 `D240` freight charge — answered every one
