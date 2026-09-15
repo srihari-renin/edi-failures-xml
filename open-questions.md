@@ -19,7 +19,18 @@ Entry template:
 **Why it matters / what's blocked:** <what can't proceed until this is answered>
 -->
 
-_(Empty — fills in as questions come up.)_
+### Orgill PSI1297591 — does BuyerPartNumber requirement disappear once PO isn't 8 characters? — asked 2026-09-15
+**Question:** The original rejection also flagged `BuyerPartNumber` as missing on 2 of 3 line
+items, with the stated condition "required when PO number is 8 characters long." The original
+`PurchaseOrderNumber` (`42794261`) was 8 characters; `_v2`'s corrected D2C PO (`125005-7176`) is
+11. Does fixing the PO length actually remove Orgill's `BuyerPartNumber` requirement, or is that
+requirement unconditional and `_v2` will bounce again for the same missing data?
+**Why it matters / what's blocked:** `_v2` (PR #19) hasn't been resent yet. If the inference is
+wrong, resending as-is burns another rejection cycle on a defect we already knew about instead of
+fixing it now. Need Sri Hari to either confirm this reading (e.g. from Orgill's EDI spec docs) or
+supply `BuyerPartNumber` values for `LineSequenceNumber` 2 and 3 before resend.
+
+_(Empty otherwise — fills in as questions come up.)_
 
 ## Answered
 
