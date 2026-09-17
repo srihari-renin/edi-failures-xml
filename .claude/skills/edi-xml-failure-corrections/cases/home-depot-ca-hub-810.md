@@ -12,6 +12,33 @@ file — see `cases/README.md`.
   Confirmed on Case 01 (two allowance lines, codes I170 and C300). No charge
   (`C`) indicator seen yet for this customer to confirm the sign flips the
   other way — treat that as unconfirmed until seen.
+- **The `850` carries the authoritative `UnitPrice` and allowance amounts** —
+  same convention as [Home Depot.CA MDO](home-depot-ca-mdo-810.md) and
+  [Home Depot Canada](home-depot-canada-810.md). An 810 that drifts from its
+  PO still foots on its own numbers and passes validation; it is only caught
+  by matching to the 850 via `PurchaseOrderNumber`. Case 02 was $1.00/unit
+  under the PO with every derived figure consistent.
+- **Summary formulas, confirmed to the cent on PSI1303944 (accepted) and
+  PSI1327965 `_v2`:**
+  - `I170` = 0.25% and `C300` = 1.25% of `TotalNetSalesAmount` (both are on
+    the 850 with `AllowChrgPercent`, so they double as a price cross-check)
+  - taxable base = `TotalNetSalesAmount` − Σ`AllowChrgAmt`
+  - `TotalAmount` = `TotalNetSalesAmount` + Σ`TaxAmount` − Σ`AllowChrgAmt`
+  - `TermsDiscountAmount` = 2% × (`TotalNetSalesAmount` + Σ`TaxAmount`)
+    — excludes allowances, same as MDO.
+- **Quebec ship-to:** two `Tax` records — `CG` (GST 5%) and **`ST`** (QST
+  9.975%, `TaxPercent` shown as `9.97` or `9.98` depending on NAV rounding;
+  both accepted). Both lines carry the QST registration `1225162693TQ0001`
+  as `TaxID`, not the GST number `835391830` used on non-QC invoices. All
+  confirmed by accepted invoice PSI1303944 (store 7147, St-Jérôme).
+- **Order programs:** `MR` reference `D2C` / `4C` = `C` is home delivery to
+  the consumer (PSI1317282); `D2S` / `4C` = `S` is ship-to-store for pickup
+  — the `ST` address is the **Home Depot store** (`93` + store number) with
+  the *consumer's* name in `AddressName`. The `850` carries the same value
+  in `TicketingCodeReference` and its `MR` reference.
+- **`TotalWeight` / `TotalVolume` are `0.00`** on every accepted Hub invoice
+  seen (PSI1317282, PSI1303944) — not a defect for this program.
+- Files from this partner use **CRLF** line endings and no trailing newline.
 
 ## Cases
 
@@ -34,6 +61,52 @@ Entry template — copy this block for every new case AND every new version:
 - **Files:** <original.xml> → <original_v2.xml>
 - **Status:** <resolved / resent, awaiting confirmation / failed — superseded by _v3>
 -->
+
+### Case 02 — 810 — price-mismatch — 2026-09-17
+- **Document type:** 810
+- **Error type:** `price-mismatch`
+- **Reported by:** caught before sending — the user suspected "some
+  information might be missing" on the ASN/invoice pair for PO 538826239 and
+  asked for a comparison against previously accepted documents.
+- **Error message:** n/a — no partner rejection; proactive check.
+- **Source file:** `4182998_Home Depot.CA Hub 810.xml` (invoice PSI1327965,
+  PO 538826239, SO1333498, shipment SS1335829, store 7185 St-Constant QC) —
+  untouched
+- **Reference files:** `4094391_Home Depot.CA Hub 810 - Reference.xml`
+  (PSI1303944, PO 537321519 — accepted; **same item
+  `BY0114BWPRM060080`, same D2S program, same carrier SDCR_DS, QC ship-to,
+  qty 1**, so it settled every derived figure); `4177760_Home Depot.CA
+  850.xml` (the inbound PO 538826239 itself — settled the price);
+  `4094342_Home Depot.CA 856 - Reference.xml` (the ASN paired with
+  PSI1303944; see the 856 log).
+- **Reference ID:** invoice PSI1327965, PO 538826239, SO1333498
+- **Document defect:** `UnitPrice` `171.20` where the 850 says `172.2`.
+  Every dependent figure was computed consistently around the wrong price
+  (C300 2.14, GST 8.43, QST 16.82, `TotalAmount` 193.88, discount 3.93), so
+  the invoice footed and would have passed Rithum's balance check — the
+  defect is only visible against the PO. Net effect: $1.14 under-billed.
+  **Nothing was structurally missing**: element-for-element the file matched
+  accepted PSI1303944; the only other differences were order-specific values.
+- **Upstream root cause:** unconfirmed. $1.00/unit is not a penny adjustment;
+  most likely the NAV sales line took a price-list / item-card price instead
+  of the 850 price on SO1333498. Worth checking where SO1333498's unit price
+  came from before the next Hub order for this item.
+- **Fix (applied in _v2)** — all values settled by reference PSI1303944, which
+  carries identical figures for the same item at 172.20 / qty 1:
+  - `UnitPrice`, `ExtendedItemTotal`, `TotalNetSalesAmount`: 171.20 → 172.20
+  - `C300` `AllowChrgAmt`: 2.14 → 2.15 (1.25% × 172.20; `I170` stays 0.43)
+  - `CG` `TaxAmount`: 8.43 → 8.48 (5% × 169.62)
+  - `ST` `TaxAmount`: 16.82 → 16.92 (9.975% × 169.62)
+  - `TotalAmount`: 193.88 → 195.02
+  - `TermsDiscountAmount`: 3.93 → 3.95 (2% × 197.60)
+  - Left alone: `ST` `TaxPercent` `9.98` (reference shows `9.97`; both are
+    NAV roundings of 9.975 and both have been accepted — not evidenced as a
+    defect). Eight-line diff, CRLF preserved, no trailing newline.
+- **Files:** `4182998_Home Depot.CA Hub 810.xml` →
+  `4182998_Home Depot.CA Hub 810_v2.xml`
+- **Status:** fixed, awaiting resend and partner confirmation. Paired ASN
+  corrected in the same session — see
+  [home-depot-ca-hub-856.md](home-depot-ca-hub-856.md) Case 01.
 
 ### Case 01 — 810 — totals-mismatch — 2026-08-21
 - **Document type:** 810

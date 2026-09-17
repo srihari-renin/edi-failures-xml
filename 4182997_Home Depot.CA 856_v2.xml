@@ -1,0 +1,190 @@
+<AdvanceShipNotices>
+  <AdvanceShipNotice>
+    <Header>
+      <ShipmentHeader>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HS</RecordType>
+        <ShipmentDate>20260917</ShipmentDate>
+        <Vendor>70001340</Vendor>
+        <TsetPurposeCode>00</TsetPurposeCode>
+        <TsetTypeCode>SA</TsetTypeCode>
+        <ShipNoticeDate>20260917</ShipNoticeDate>
+        <ShipNoticeTime>1604</ShipNoticeTime>
+        <ASNStructureCode>0001</ASNStructureCode>
+        <ShipmentLadingQuantity>1</ShipmentLadingQuantity>
+        <ShipmentWeight>0.00</ShipmentWeight>
+        <ShipmentWeightUOM>LB</ShipmentWeightUOM>
+        <CarrierAlphaCode>SDCR_DS</CarrierAlphaCode>
+        <CarrierTransMethodCode>M</CarrierTransMethodCode>
+        <CarrierRouting>SAMEDAY WORLDWIDE-Threshold Service</CarrierRouting>
+        <BillOfLadingNumber>SS1335829</BillOfLadingNumber>
+        <CarrierProNumber>A12228567</CarrierProNumber>
+        <FOBPayCode>CC</FOBPayCode>
+        <CurrentScheduledDeliveryDate>20260926</CurrentScheduledDeliveryDate>
+      </ShipmentHeader>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>MR</ReferenceQual>
+        <ReferenceID>D2S</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>X9</ReferenceQual>
+        <ReferenceID>3796580281</ReferenceID>
+      </Reference>
+      <Reference>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>RH</RecordType>
+        <ReferenceQual>4C</ReferenceQual>
+        <ReferenceID>S</ReferenceID>
+      </Reference>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>RI</AddressTypeCode>
+        <LocationCodeQualifier>92</LocationCodeQualifier>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>ST</AddressTypeCode>
+        <LocationCodeQualifier>93</LocationCodeQualifier>
+        <AddressLocationNumber>7185</AddressLocationNumber>
+        <AddressName>GAGNON J O MARC GAGNON</AddressName>
+        <Address1>490 VOIE DE LA DESSERTE</Address1>
+        <City>ST CONSTANT</City>
+        <State>QC</State>
+        <PostalCode>J5A 2S6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>SF</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>RENMISSI-1</AddressLocationNumber>
+        <AddressName>Renin Mississauga</AddressName>
+        <Address1>5715 KENNEDY RD</Address1>
+        <City>MISSISSAUGA</City>
+        <State>ON</State>
+        <PostalCode>L4Z 2G4</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BT</AddressTypeCode>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>US</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>VN</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>70001340</AddressLocationNumber>
+        <AddressName>Renin Canada Corporation</AddressName>
+        <Address1>110 Walker Drive</Address1>
+        <City>Brampton</City>
+        <State>ON</State>
+        <PostalCode>L6T 4H6</PostalCode>
+        <Country>CA</Country>
+      </Address>
+      <Address>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HA</RecordType>
+        <AddressTypeCode>BY</AddressTypeCode>
+        <LocationCodeQualifier>91</LocationCodeQualifier>
+        <AddressLocationNumber>C12000292</AddressLocationNumber>
+        <AddressName>HOME DEPOT CAN ECOMMERCE</AddressName>
+        <Address1>P.O. BOX 105581</Address1>
+        <City>ATLANTA</City>
+        <State>GA</State>
+        <PostalCode>30348-5581</PostalCode>
+        <Country>CA</Country>
+      </Address>
+    </Header>
+    <OrderLevel>
+      <OrderHeader>
+        <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+        <ShipmentIdentification>SS1335829</ShipmentIdentification>
+        <RecordType>HO</RecordType>
+        <OrderNumber>SO1333498</OrderNumber>
+        <PurchaseOrderNumber>538826239</PurchaseOrderNumber>
+        <PurchaseOrderDate>20260914</PurchaseOrderDate>
+        <OrderLadingQuantity>1</OrderLadingQuantity>
+        <CustomerOrderNumber>0243063846</CustomerOrderNumber>
+        <OrderStatusCode>CC</OrderStatusCode>
+      </OrderHeader>
+      <PackLevel>
+        <Pack>
+          <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1335829</ShipmentIdentification>
+          <RecordType>PO</RecordType>
+          <PackLevelType>P</PackLevelType>
+          <PackWeight>0.00</PackWeight>
+          <PackWeightUOM>LB</PackWeightUOM>
+          <MarksAndNumbersQualifier1>GM</MarksAndNumbersQualifier1>
+          <MarksAndNumbers1>00300430440013358299</MarksAndNumbers1>
+        </Pack>
+        <Miscellaneous>
+          <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+          <ShipmentIdentification>SS1335829</ShipmentIdentification>
+          <RecordType>ML</RecordType>
+          <Qualifier1>ZZ</Qualifier1>
+          <Description1>A12228567</Description1>
+        </Miscellaneous>
+        <ItemLevel>
+          <LineItem>
+            <ShipmentLine>
+              <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+              <ShipmentIdentification>SS1335829</ShipmentIdentification>
+              <RecordType>LI</RecordType>
+              <LineSequenceNumber>10</LineSequenceNumber>
+              <BuyerPartNumber>1001907742</BuyerPartNumber>
+              <VendorPartNumber>BY0114BWPRM060080</VendorPartNumber>
+              <ConsumerPackageCode>043045001359</ConsumerPackageCode>
+              <PartDescription1>114-6080-WT.R 3PNL 3S PAINTED SMOOTH DR WEXFORD</PartDescription1>
+              <OrderQty>1</OrderQty>
+              <OrderQtyUOM>EA</OrderQtyUOM>
+              <UnitPrice>172.20</UnitPrice>
+              <OuterPack>1</OuterPack>
+              <InnerPack>1</InnerPack>
+              <ShipQty>1.00</ShipQty>
+              <ShipQtyUOM>EA</ShipQtyUOM>
+              <ItemStatusCode>AC</ItemStatusCode>
+            </ShipmentLine>
+          </LineItem>
+        </ItemLevel>
+      </PackLevel>
+    </OrderLevel>
+    <Summary>
+      <TradingPartnerId>ADJALLRENINHOLD</TradingPartnerId>
+      <ShipmentIdentification>SS1335829</ShipmentIdentification>
+      <RecordType>ST</RecordType>
+      <TotalLineItems>1</TotalLineItems>
+    </Summary>
+  </AdvanceShipNotice>
+</AdvanceShipNotices>
