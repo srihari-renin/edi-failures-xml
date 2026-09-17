@@ -256,6 +256,8 @@ Newest first. One row per case *version* (a failed `_v2` and its resolving
 
 | Case | Customer | Doc | Error type | Status | File |
 |---|---|---|---|---|---|
+| 02 | Home Depot.CA Hub | 810 | `price-mismatch` | fixed, awaiting confirmation | [cases/home-depot-ca-hub-810.md](cases/home-depot-ca-hub-810.md#case-02--810--price-mismatch--2026-09-17) |
+| 01 | Home Depot.CA Hub | 856 | `price-mismatch` | fixed, awaiting confirmation | [cases/home-depot-ca-hub-856.md](cases/home-depot-ca-hub-856.md#case-01--856--price-mismatch--2026-09-17) |
 | 01 | Home Hardware Colonial | 810 Credit Memo | `credit-sign-convention` | resolved | [cases/home-hardware-colonial-810-credit-memo.md](cases/home-hardware-colonial-810-credit-memo.md#case-01--810-credit-memo--credit-sign-convention--2026-09-14) |
 | 03 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-03--810--po-number-format--2026-09-15) |
 | 02 | Orgill US Stores | 810 | `po-number-format` | resolved | [cases/orgill-us-stores-810.md](cases/orgill-us-stores-810.md#case-02--810--po-number-format--2026-09-11) |
